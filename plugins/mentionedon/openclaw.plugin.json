@@ -1,0 +1,20 @@
+{
+  "id": "mentionedon",
+  "name": "MentionedOn",
+  "description": "Review supplied AI-discovery evidence and prioritize visibility improvements.",
+  "version": "1.1.1",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "skills": [
+    "./skills"
+  ],
+  "mcpServers": {
+    "mentionedon": {
+      "url": "https://mentioned-on.com/mcp",
+      "transport": "streamable-http"
+    }
+  }
+}

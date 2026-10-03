@@ -1,0 +1,21 @@
+{
+  "id": "portravo",
+  "name": "portravo",
+  "version": "1.0.2",
+  "description": "Review construction plan takeoffs and download estimates after review and pricing.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "hello@portravo.com",
+    "url": "https://portravo.com"
+  },
+  "homepage": "https://portravo.com/developers/mcp",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": {
+    "portravo": {
+      "url": "https://portravo.com/mcp",
+      "transport": "streamable-http",
+      "auth": "oauth"
+    }
+  }
+}

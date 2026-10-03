@@ -1,0 +1,21 @@
+{
+  "id": "casacaddy",
+  "name": "casacaddy",
+  "version": "1.0.3",
+  "description": "Read maintenance requirements, prepare confirmed guides and check device-owned guide jobs.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "john@soxoa.com",
+    "url": "https://casacaddy.com"
+  },
+  "homepage": "https://api.casacaddy.com/developers",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": {
+    "casacaddy": {
+      "url": "https://api.casacaddy.com/mcp",
+      "transport": "streamable-http",
+      "auth": "oauth"
+    }
+  }
+}

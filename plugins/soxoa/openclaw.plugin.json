@@ -1,0 +1,20 @@
+{
+  "id": "soxoa",
+  "name": "Soxoa",
+  "description": "Estimate illustrative automation ROI and prioritize user-described recurring workflows.",
+  "version": "1.1.1",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "skills": [
+    "./skills"
+  ],
+  "mcpServers": {
+    "soxoa": {
+      "url": "https://soxoa.com/mcp",
+      "transport": "streamable-http"
+    }
+  }
+}

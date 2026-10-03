@@ -1,0 +1,20 @@
+{
+  "id": "mentionedon",
+  "name": "mentionedon",
+  "version": "1.1.1",
+  "description": "Review supplied AI-discovery evidence and prioritize visibility improvements.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "hello@mentioned-on.com",
+    "url": "https://mentioned-on.com"
+  },
+  "homepage": "https://mentioned-on.com/developers/mcp",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": {
+    "mentionedon": {
+      "url": "https://mentioned-on.com/mcp",
+      "transport": "streamable-http"
+    }
+  }
+}

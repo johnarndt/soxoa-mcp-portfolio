@@ -1,0 +1,20 @@
+{
+  "id": "intakra",
+  "name": "Intakra",
+  "description": "Score supplied buying signals and prepare a review-only why-now brief.",
+  "version": "1.1.2",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "skills": [
+    "./skills"
+  ],
+  "mcpServers": {
+    "intakra": {
+      "url": "https://intakra.com/mcp",
+      "transport": "streamable-http"
+    }
+  }
+}

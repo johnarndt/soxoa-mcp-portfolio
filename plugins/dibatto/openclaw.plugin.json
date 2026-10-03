@@ -1,0 +1,21 @@
+{
+  "id": "dibatto",
+  "name": "Dibatto",
+  "description": "Review saved podcast rundowns and transcripts, and prepare private episode drafts.",
+  "version": "1.0.4",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "skills": [
+    "./skills"
+  ],
+  "mcpServers": {
+    "dibatto": {
+      "url": "https://dibatto.com/mcp",
+      "transport": "streamable-http",
+      "auth": "oauth"
+    }
+  }
+}

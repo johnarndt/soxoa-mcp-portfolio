@@ -1,0 +1,21 @@
+{
+  "id": "postedly",
+  "name": "postedly",
+  "version": "1.2.3",
+  "description": "Quote available handwritten cards, open a private review link, and read owned order status.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "john@soxoa.com",
+    "url": "https://postedly.com"
+  },
+  "homepage": "https://postedly.com/developers",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": {
+    "postedly": {
+      "url": "https://postedly.com/mcp/send",
+      "transport": "streamable-http",
+      "auth": "oauth"
+    }
+  }
+}

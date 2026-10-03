@@ -1,0 +1,21 @@
+{
+  "id": "dokyumi",
+  "name": "dokyumi",
+  "version": "1.0.4",
+  "description": "Extract attached documents with saved schemas and review confidence and validation.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "hello@dokyumi.com",
+    "url": "https://dokyumi.com"
+  },
+  "homepage": "https://dokyumi.com/docs/mcp",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": {
+    "dokyumi": {
+      "url": "https://dokyumi.com/mcp",
+      "transport": "streamable-http",
+      "auth": "oauth"
+    }
+  }
+}

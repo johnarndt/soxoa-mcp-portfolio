@@ -1,0 +1,21 @@
+{
+  "id": "dibatto",
+  "name": "dibatto",
+  "version": "1.0.4",
+  "description": "Review saved podcast rundowns and transcripts, and prepare private episode drafts.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "john@soxoa.com",
+    "url": "https://dibatto.com"
+  },
+  "homepage": "https://dibatto.com/developers",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": {
+    "dibatto": {
+      "url": "https://dibatto.com/mcp",
+      "transport": "streamable-http",
+      "auth": "oauth"
+    }
+  }
+}
