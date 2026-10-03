@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "casacaddy": {
+      "type": "http",
+      "url": "https://api.casacaddy.com/mcp"
+    }
+  }
+}

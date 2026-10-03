@@ -1,0 +1,78 @@
+{
+  "name": "soxoa-mcp-portfolio",
+  "owner": {
+    "name": "Soxoa LLC",
+    "email": "john@soxoa.com"
+  },
+  "metadata": {
+    "description": "Soxoa portfolio remote MCP integrations and scoped workflow skills."
+  },
+  "plugins": [
+    {
+      "name": "soxoa",
+      "source": "./plugins/soxoa",
+      "description": "Estimate illustrative automation ROI and prioritize user-described recurring workflows.",
+      "version": "1.1.1"
+    },
+    {
+      "name": "mentionedon",
+      "source": "./plugins/mentionedon",
+      "description": "Review supplied AI-discovery evidence and prioritize visibility improvements.",
+      "version": "1.1.1"
+    },
+    {
+      "name": "regsentry",
+      "source": "./plugins/regsentry",
+      "description": "Inspect authorized static tracking signals and review supplied consent evidence.",
+      "version": "1.1.3"
+    },
+    {
+      "name": "intakra",
+      "source": "./plugins/intakra",
+      "description": "Score supplied buying signals and prepare a review-only why-now brief.",
+      "version": "1.1.2"
+    },
+    {
+      "name": "postedly",
+      "source": "./plugins/postedly",
+      "description": "Quote available handwritten cards, open a private review link, and read owned order status.",
+      "version": "1.2.3"
+    },
+    {
+      "name": "portravo",
+      "source": "./plugins/portravo",
+      "description": "Review construction plan takeoffs and download estimates after review and pricing.",
+      "version": "1.0.2"
+    },
+    {
+      "name": "dokyumi",
+      "source": "./plugins/dokyumi",
+      "description": "Extract attached documents with saved schemas and review confidence and validation.",
+      "version": "1.0.4"
+    },
+    {
+      "name": "afterglow",
+      "source": "./plugins/afterglow",
+      "description": "Read applicable breakup and separation checklists and save confirmed task progress.",
+      "version": "1.0.2"
+    },
+    {
+      "name": "dibatto",
+      "source": "./plugins/dibatto",
+      "description": "Review saved podcast rundowns and transcripts, and prepare private episode drafts.",
+      "version": "1.0.4"
+    },
+    {
+      "name": "ocolta",
+      "source": "./plugins/ocolta",
+      "description": "Read your existing categorical document review signals, confidence and indicator counts.",
+      "version": "1.0.1"
+    },
+    {
+      "name": "casacaddy",
+      "source": "./plugins/casacaddy",
+      "description": "Read maintenance requirements, prepare confirmed guides and check device-owned guide jobs.",
+      "version": "1.0.3"
+    }
+  ]
+}

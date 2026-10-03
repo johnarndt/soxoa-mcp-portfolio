@@ -1,0 +1,17 @@
+{
+  "name": "ocolta",
+  "version": "1.0.1",
+  "description": "Read your existing categorical document review signals, confidence and indicator counts.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "john@soxoa.com",
+    "url": "https://ocolta.com"
+  },
+  "homepage": "https://app.ocolta.com/workspace/integrations",
+  "license": "MIT",
+  "keywords": [
+    "ocolta"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

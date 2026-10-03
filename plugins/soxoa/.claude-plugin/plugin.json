@@ -1,0 +1,17 @@
+{
+  "name": "soxoa",
+  "version": "1.1.1",
+  "description": "Estimate illustrative automation ROI and prioritize user-described recurring workflows.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "hello@soxoa.com",
+    "url": "https://soxoa.com"
+  },
+  "homepage": "https://soxoa.com/mcp-guide",
+  "license": "MIT",
+  "keywords": [
+    "soxoa"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,224 @@
+{
+  "publisher": "Soxoa LLC",
+  "products": [
+    {
+      "slug": "soxoa",
+      "name": "Soxoa",
+      "description": "Estimate illustrative automation ROI and prioritize user-described recurring workflows.",
+      "website": "https://soxoa.com",
+      "documentation": "https://soxoa.com/mcp-guide",
+      "mcpEndpoint": "https://soxoa.com/mcp",
+      "transport": "streamable-http",
+      "authentication": "none",
+      "privacy": "https://soxoa.com/privacy",
+      "terms": "https://soxoa.com/terms",
+      "support": "https://soxoa.com/support",
+      "defaultPrompts": [
+        "Estimate illustrative accounting automation value from my invoice-entry workflow assumptions.",
+        "Rank these workflows by automation readiness and explain the guardrails."
+      ],
+      "workflowBounds": "Results are illustrative planning estimates. Preserve supplied assumptions, ask for required missing inputs, and distinguish an estimate from a guarantee.",
+      "registryName": "com.soxoa/automation-planning"
+    },
+    {
+      "slug": "mentionedon",
+      "name": "MentionedOn",
+      "description": "Review supplied AI-discovery evidence and prioritize visibility improvements.",
+      "website": "https://mentioned-on.com",
+      "documentation": "https://mentioned-on.com/developers/mcp",
+      "mcpEndpoint": "https://mentioned-on.com/mcp",
+      "transport": "streamable-http",
+      "authentication": "none",
+      "privacy": "https://mentioned-on.com/privacy",
+      "terms": "https://mentioned-on.com/terms",
+      "support": "https://mentioned-on.com/support",
+      "defaultPrompts": [
+        "Assess these supplied page signals for AI discovery readiness.",
+        "Turn these missing visibility signals into a prioritized action plan.",
+        "Summarize these dated AI mention captures and preserve skipped requests and uncertainty."
+      ],
+      "workflowBounds": "Use supplied, dated evidence. Preserve skipped or uncertain captures. Do not claim these tools run fresh model scans or guarantee a recommendation.",
+      "registryName": "com.mentioned-on/ai-discovery-readiness"
+    },
+    {
+      "slug": "regsentry",
+      "name": "RegSentry",
+      "description": "Inspect authorized static tracking signals and review supplied consent evidence.",
+      "website": "https://regsentry.com",
+      "documentation": "https://regsentry.com/mcp-guide",
+      "mcpEndpoint": "https://regsentry.com/mcp",
+      "transport": "streamable-http",
+      "authentication": "none",
+      "privacy": "https://regsentry.com/privacy",
+      "terms": "https://regsentry.com/terms",
+      "support": "https://regsentry.com/support",
+      "defaultPrompts": [
+        "Inspect the tracking setup on a public domain I am authorized to test.",
+        "Grade these consent-flow observations and show what still needs verification.",
+        "Give me the remediation playbook for this tracker."
+      ],
+      "workflowBounds": "Inspect only sites the user is authorized to review. Static markup is evidence of signals, not proof that tracking ran or a legal compliance determination.",
+      "registryName": "com.regsentry/tracking-inspector"
+    },
+    {
+      "slug": "intakra",
+      "name": "Intakra",
+      "description": "Score supplied buying signals and prepare a review-only why-now brief.",
+      "website": "https://intakra.com",
+      "documentation": "https://intakra.com/mcp-guide",
+      "mcpEndpoint": "https://intakra.com/mcp",
+      "transport": "streamable-http",
+      "authentication": "none",
+      "privacy": "https://intakra.com/privacy",
+      "terms": "https://intakra.com/terms",
+      "support": "https://intakra.com/contact",
+      "defaultPrompts": [
+        "Score these supplied account-fit facts and recent business signals.",
+        "Prepare a why-now review from this supplied tech-stack change and flag unverified intent.",
+        "Flag unsupported budget, authority, or buying-intent claims."
+      ],
+      "workflowBounds": "Use caller-supplied account fit and dated buying-signal evidence. Mark unverified intent and prepare review-only briefs; do not contact prospects.",
+      "registryName": "com.intakra/buying-signal-review"
+    },
+    {
+      "slug": "postedly",
+      "name": "Postedly",
+      "description": "Quote available handwritten cards, open a private review link, and read owned order status.",
+      "website": "https://postedly.com",
+      "documentation": "https://postedly.com/developers",
+      "mcpEndpoint": "https://postedly.com/mcp/send",
+      "transport": "streamable-http",
+      "authentication": "oauth2.1_pkce",
+      "privacy": "https://postedly.com/privacy",
+      "terms": "https://postedly.com/terms",
+      "support": "https://postedly.com/support",
+      "defaultPrompts": [
+        "What can Postedly send right now? Show available options.",
+        "Show handwritten card designs and writing styles for a thank-you note.",
+        "Prepare my card quote and private review link. Do not pay or mail yet."
+      ],
+      "workflowBounds": "Read the live service and card catalog first. Only handwritten cards are currently available. Quoting, document intake and opening private review do not send, charge, or approve payment. Card samples are not a rendered proof of the user's exact message. Payment requires the user's explicit browser review. Report payment and fulfillment separately.",
+      "registryName": "com.postedly/send"
+    },
+    {
+      "slug": "portravo",
+      "name": "Portravo",
+      "description": "Review construction plan takeoffs and download estimates after review and pricing.",
+      "website": "https://portravo.com",
+      "documentation": "https://portravo.com/developers/mcp",
+      "mcpEndpoint": "https://portravo.com/mcp",
+      "transport": "streamable-http",
+      "authentication": "oauth2.1_pkce",
+      "privacy": "https://portravo.com/privacy",
+      "terms": "https://portravo.com/terms",
+      "support": "https://portravo.com/support",
+      "defaultPrompts": [
+        "Show my construction takeoffs and which lines need review.",
+        "Create an estimate project and attach this plan PDF.",
+        "Download my reviewed, priced estimate as an Excel workbook."
+      ],
+      "workflowBounds": "Use the exact uploaded PDF bytes or an actual permitted attachment descriptor. Ask for explicit existing-credit approval before a fresh takeoff. Preserve the documented idempotency key on an uncertain response; a retry is not approval for another job. Quantities and mappings need human review. Export only a reviewed, priced or final estimate as documented.",
+      "registryName": "com.portravo/construction-takeoff"
+    },
+    {
+      "slug": "dokyumi",
+      "name": "Dokyumi",
+      "description": "Extract attached documents with saved schemas and review confidence and validation.",
+      "website": "https://dokyumi.com",
+      "documentation": "https://dokyumi.com/docs/mcp",
+      "mcpEndpoint": "https://dokyumi.com/mcp",
+      "transport": "streamable-http",
+      "authentication": "oauth2.1_pkce",
+      "privacy": "https://dokyumi.com/privacy",
+      "terms": "https://dokyumi.com/terms",
+      "support": "https://dokyumi.com/docs/mcp",
+      "defaultPrompts": [
+        "List my saved Dokyumi extraction schemas.",
+        "Find my saved invoice schema before extracting this attached invoice.",
+        "Show a saved extraction and identify values that need review."
+      ],
+      "workflowBounds": "Find the user's saved schema before extracting the exact supplied document. Ask for explicit existing-credit approval before a fresh extraction. Preserve its request key on uncertain responses and same-request recovery. Report actual confidence, validation and provider provenance; confidence is not an accuracy guarantee. Never buy or refill credits.",
+      "registryName": "com.dokyumi/document-extraction"
+    },
+    {
+      "slug": "afterglow",
+      "name": "Afterglow",
+      "description": "Read applicable breakup and separation checklists and save confirmed task progress.",
+      "website": "https://afterglow-lime.vercel.app",
+      "documentation": "https://afterglow-lime.vercel.app/developers",
+      "mcpEndpoint": "https://afterglow-lime.vercel.app/mcp",
+      "transport": "streamable-http",
+      "authentication": "oauth2.1_pkce",
+      "privacy": "https://afterglow-lime.vercel.app/privacy",
+      "terms": "https://afterglow-lime.vercel.app/terms",
+      "support": "https://afterglow-lime.vercel.app/support",
+      "defaultPrompts": [
+        "What is left in my Afterglow home checklist?",
+        "Show my remaining money checklist tasks.",
+        "Mark the exact task I selected done after I confirm."
+      ],
+      "workflowBounds": "Read the user's applicable legal, money, home or coparenting checklist and preserve its returned disclaimer, audience filter, onboarding and plan limits. Save only the exact item and todo, done or not-applicable state the user confirms. Repeating the same item and state preserves its completion timestamp. These practical breakup/separation checklists do not expose the user's story, coaching history or private check-ins.",
+      "registryName": "com.soxoa/afterglow-checklists"
+    },
+    {
+      "slug": "dibatto",
+      "name": "Dibatto",
+      "description": "Review saved podcast rundowns and transcripts, and prepare private episode drafts.",
+      "website": "https://dibatto.com",
+      "documentation": "https://dibatto.com/developers",
+      "mcpEndpoint": "https://dibatto.com/mcp",
+      "transport": "streamable-http",
+      "authentication": "oauth2.1_pkce",
+      "privacy": "https://dibatto.com/legal/privacy",
+      "terms": "https://dibatto.com/legal/terms",
+      "support": "https://dibatto.com/about",
+      "defaultPrompts": [
+        "Show my podcast show’s saved rundown and citations.",
+        "Find my episode and its saved transcript.",
+        "Prepare a private episode draft from my selected rundown."
+      ],
+      "workflowBounds": "Read owned shows, cached cited rundowns, saved episodes/transcripts and existing wrap states. Preparing a private episode is not recording or publication. New research/model work requires explicit authorization and current Studio entitlement. Recording, live co-hosting, media upload, wrap generation and publication remain app-only.",
+      "registryName": "com.soxoa/dibatto-podcast"
+    },
+    {
+      "slug": "ocolta",
+      "name": "Ocolta",
+      "description": "Read your existing categorical document review signals, confidence and indicator counts.",
+      "website": "https://ocolta.com",
+      "documentation": "https://app.ocolta.com/workspace/integrations",
+      "mcpEndpoint": "https://app.ocolta.com/mcp",
+      "transport": "streamable-http",
+      "authentication": "oauth2.1_pkce",
+      "privacy": "https://app.ocolta.com/legal/privacy",
+      "terms": "https://ocolta.com/legal/terms",
+      "support": "https://app.ocolta.com/workspace/integrations",
+      "defaultPrompts": [
+        "Show my recoverable Ocolta review summaries.",
+        "What are this saved review’s categorical signals and confidence?",
+        "Show indicator counts without revealing document text."
+      ],
+      "workflowBounds": "Read only owner-scoped existing review summaries. Preserve categorical signals, confidence and counts without exposing original document text. These are review signals; do not turn them into legal, medical or psychological diagnoses or create a new document assessment through these tools.",
+      "registryName": "com.soxoa/ocolta-review-summaries"
+    },
+    {
+      "slug": "casacaddy",
+      "name": "CasaCaddy",
+      "description": "Read maintenance requirements, prepare confirmed guides and check device-owned guide jobs.",
+      "website": "https://casacaddy.com",
+      "documentation": "https://api.casacaddy.com/developers",
+      "mcpEndpoint": "https://api.casacaddy.com/mcp",
+      "transport": "streamable-http",
+      "authentication": "oauth2.1_pkce",
+      "privacy": "https://api.casacaddy.com/privacy",
+      "terms": "https://api.casacaddy.com/terms",
+      "support": "https://api.casacaddy.com/support",
+      "defaultPrompts": [
+        "Show CasaCaddy guide requirements for my device.",
+        "Check the status of my maintenance-guide job.",
+        "Review my saved guide before preparing another."
+      ],
+      "workflowBounds": "Read the maintenance requirements and account/device-owned guide job. Ask for confirmation before preparing a guide, preserve the request key on a retry, and report its actual queued, processing, failed or completed state. Guide preparation is not evidence the maintenance work was performed.",
+      "registryName": "com.soxoa/casacaddy-maintenance"
+    }
+  ]
+}

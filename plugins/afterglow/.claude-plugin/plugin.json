@@ -1,0 +1,17 @@
+{
+  "name": "afterglow",
+  "version": "1.0.2",
+  "description": "Read applicable breakup and separation checklists and save confirmed task progress.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "john@soxoa.com",
+    "url": "https://afterglow-lime.vercel.app"
+  },
+  "homepage": "https://afterglow-lime.vercel.app/developers",
+  "license": "MIT",
+  "keywords": [
+    "afterglow"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
