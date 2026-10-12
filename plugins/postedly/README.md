@@ -1,6 +1,6 @@
 # Postedly MCP integration
 
-Prepare fax, letter, certified mail, postcard and handwritten card quotes, open private review links, and read owned order status.
+Physical mail MCP: letters, certified mail, postcards, fax, handwritten cards; review before payment
 
 This plugin connects a compatible MCP client to Postedly's hosted first-party endpoint and adds a scoped workflow skill. The public distribution files contain configuration, documentation and skill instructions. Product accounts, owner permissions, current plan entitlements and service terms continue to apply.
 

@@ -35,8 +35,8 @@
     {
       "name": "postedly",
       "source": "./plugins/postedly",
-      "description": "Prepare fax, letter, certified mail, postcard and handwritten card quotes, open private review links, and read owned order status.",
-      "version": "1.2.4"
+      "description": "Physical mail MCP: letters, certified mail, postcards, fax, handwritten cards; review before payment",
+      "version": "1.2.5"
     },
     {
       "name": "portravo",

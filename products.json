@@ -83,7 +83,7 @@
     {
       "slug": "postedly",
       "name": "Postedly",
-      "description": "Prepare fax, letter, certified mail, postcard and handwritten card quotes, open private review links, and read owned order status.",
+      "description": "Physical mail MCP: letters, certified mail, postcards, fax, handwritten cards; review before payment",
       "website": "https://postedly.com",
       "documentation": "https://postedly.com/developers",
       "mcpEndpoint": "https://postedly.com/mcp/send",
