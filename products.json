@@ -83,7 +83,7 @@
     {
       "slug": "postedly",
       "name": "Postedly",
-      "description": "Quote available handwritten cards, open a private review link, and read owned order status.",
+      "description": "Prepare fax, letter, certified mail, postcard and handwritten card quotes, open private review links, and read owned order status.",
       "website": "https://postedly.com",
       "documentation": "https://postedly.com/developers",
       "mcpEndpoint": "https://postedly.com/mcp/send",
@@ -94,10 +94,11 @@
       "support": "https://postedly.com/support",
       "defaultPrompts": [
         "What can Postedly send right now? Show available options.",
+        "Prepare mailing this finished PDF and give me the private link to review every page and the total. Do not pay or send yet.",
         "Show handwritten card designs and writing styles for a thank-you note.",
-        "Prepare my card quote and private review link. Do not pay or mail yet."
+        "Check the recorded status of my existing Postedly order."
       ],
-      "workflowBounds": "Read the live service and card catalog first. Only handwritten cards are currently available. Quoting, document intake and opening private review do not send, charge, or approve payment. Card samples are not a rendered proof of the user's exact message. Payment requires the user's explicit browser review. Report payment and fulfillment separately.",
+      "workflowBounds": "Check postedly_services or the live catalog before quoting fax, letters, certified mail, postcards or handwritten cards; availability is determined by the current response. Check the product catalog for handwritten cards. Use the connected OAuth owner and the actual intended document: preserve provided PDF bytes unless changes were requested; finish and inspect every page of a newly requested letter before upload. Intentional forms and test documents remain valid when requested. Review every page of the final proof; card samples are not a rendered proof of the exact message. Uploading, quoting and opening private review do not approve, charge or send. Payment requires the user's explicit browser review. Report payment and fulfillment separately. The object beta uses a separate manual request and is not an automated document order.",
       "registryName": "com.postedly/send"
     },
     {
