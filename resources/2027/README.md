@@ -8,6 +8,7 @@ Use these guides to compare an automation pilot, AI visibility evidence, account
 - [How to evaluate AI visibility tools for 2027: a reproducible test for local businesses](mentionedon.md) · [Editable checklist](mentionedon-checklist.csv)
 - [How to evaluate buying-signal tools for 2027](intakra.md) · [Editable checklist](intakra-checklist.csv)
 - [How to evaluate AI takeoff software for 2027: check the complete plan set](portravo.md) · [Editable checklist](portravo-checklist.csv)
+- [How to evaluate AI-agent mail and fax services for 2027](postedly.md) · [Editable checklist](postedly-checklist.csv)
 
 ## How to use a checklist
 

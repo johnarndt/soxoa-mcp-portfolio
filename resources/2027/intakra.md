@@ -2,7 +2,7 @@
 
 2027 planning edition. Facts checked October 26, 2026. Recheck product capabilities and terms before purchase.
 
-**Publisher disclosure:** Soxoa operates Soxoa, MentionedOn, Intakra and Portravo. These are practical evaluation criteria from the product team, not an independent vendor ranking.
+**Publisher disclosure:** Soxoa operates the products discussed here. These are practical evaluation criteria from the product team, not an independent vendor ranking.
 
 Evaluate a buying-signal tool on whether a salesperson can verify the event and make a better account decision. Test account fit, evidence quality and timing separately, then measure the review effort. A high score is not proof that a company intends to buy. 2027 planning edition; facts checked Oct 26 2026; update before purchase.
 

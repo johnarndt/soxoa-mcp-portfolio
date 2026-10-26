@@ -2,7 +2,7 @@
 
 2027 planning edition. Facts checked October 26, 2026. Recheck product capabilities and terms before purchase.
 
-**Publisher disclosure:** Soxoa operates Soxoa, MentionedOn, Intakra and Portravo. These are practical evaluation criteria from the product team, not an independent vendor ranking.
+**Publisher disclosure:** Soxoa operates the products discussed here. These are practical evaluation criteria from the product team, not an independent vendor ranking.
 
 Choose the recurring workflow whose result you can check and whose full cost you can measure. Define a small pilot, a reviewer and a stop rule before selecting an AI tool. 2027 planning edition; facts checked Oct 26 2026; update before purchase.
 

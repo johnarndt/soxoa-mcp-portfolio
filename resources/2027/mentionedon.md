@@ -2,7 +2,7 @@
 
 2027 planning edition. Facts checked October 26, 2026. Recheck product capabilities and terms before purchase.
 
-**Publisher disclosure:** Soxoa operates Soxoa, MentionedOn, Intakra and Portravo. These are practical evaluation criteria from the product team, not an independent vendor ranking.
+**Publisher disclosure:** Soxoa operates the products discussed here. These are practical evaluation criteria from the product team, not an independent vendor ranking.
 
 Choose an AI visibility tool by inspecting its answers and measurement rules. Use the same buyer questions, locations and settings for each comparison, preserve the evidence and keep missing measurements separate from completed answers that omit your business.
 

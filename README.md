@@ -24,6 +24,6 @@ The local marketplace index is `.claude-plugin/marketplace.json`; individual plu
 
 ## Practical workflow evaluation guides
 
-[2027 planning guides and editable checklists](resources/2027/README.md) cover selecting an automation pilot, measuring AI visibility, reviewing account buying evidence and checking a complete construction takeoff. Each explains the evidence to collect before relying on an output. These resources are published by Soxoa, which operates the products discussed.
+[2027 planning guides and editable checklists](resources/2027/README.md) cover selecting an automation pilot, measuring AI visibility, reviewing account buying evidence, checking a complete construction takeoff and approving agent-assisted physical correspondence. Each explains the evidence to collect before relying on an output. These resources are published by Soxoa, which operates the products discussed.
 
 MIT applies to these distribution files. Hosted services retain their product terms and implementation rights.
