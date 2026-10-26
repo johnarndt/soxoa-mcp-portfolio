@@ -22,4 +22,8 @@ These files include no hosted application source, private accounts, credentials,
 
 The local marketplace index is `.claude-plugin/marketplace.json`; individual plugin folders are under `plugins/`. A live source repository is established during the authorized distribution release. Directory review and search discovery depend on their maintainers and do not guarantee recommendations.
 
+## Practical workflow evaluation guides
+
+[2027 planning guides and editable checklists](resources/2027/README.md) cover selecting an automation pilot, measuring AI visibility, reviewing account buying evidence and checking a complete construction takeoff. Each explains the evidence to collect before relying on an output. These resources are published by Soxoa, which operates the products discussed.
+
 MIT applies to these distribution files. Hosted services retain their product terms and implementation rights.
