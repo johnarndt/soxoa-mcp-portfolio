@@ -1,6 +1,8 @@
 # Practical AI workflow evaluation guides for 2027
 
-Use these guides to compare an automation pilot, AI visibility evidence, account buying signals or construction takeoff coverage. Each includes an editable checklist. The checklists start blank so you can record your own evidence.
+Use these guides to compare an automation pilot, AI visibility evidence, account buying signals, construction takeoff coverage or agent-assisted mail and fax. Each includes an editable checklist. The checklists start blank so you can record your own evidence.
+
+Use the [Google Sheets workbook](https://docs.google.com/spreadsheets/d/1nUaADNCyfOwS0wX3zVPIsMKxWRnPKyhFkiA6TC5a4ko/edit?usp=drivesdk) or [browse the published worksheets](https://docs.google.com/spreadsheets/d/e/2PACX-1vSkxRA7CWvR7iTJh-xtcy9HBrPv4fyfDBOvRrJ_1eSjFKFPpBDgVcmM7kiAAPIsvsq1cFemmKTwT8Il/pubhtml). Both are public to read. Save your own copy to enter evidence.
 
 2027 planning edition. Current product facts were checked October 26, 2026. The year labels the planning period, not a claim about future performance.
 
