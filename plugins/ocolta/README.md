@@ -1,8 +1,6 @@
 # Ocolta MCP integration
 
-Read your existing categorical document review signals, confidence and indicator counts.
-
-This plugin connects a compatible MCP client to Ocolta's hosted first-party endpoint and adds a scoped workflow skill. The public distribution files contain configuration, documentation and skill instructions. Product accounts, owner permissions, current plan entitlements and service terms continue to apply.
+Explain categorical document-review signals and prepare neutral human follow-up questions.
 
 ## Connection
 
@@ -10,41 +8,27 @@ Endpoint: https://app.ocolta.com/mcp
 
 Transport: Streamable HTTP (client config type `http`).
 
-OAuth 2.1 with PKCE through the MCP client. Account tools use the connected owner identity. Public metadata discovery, where available, does not grant account access.
+OAuth 2.1 / PKCE for connected owner resources.
 
-```json
-{
-  "mcpServers": {
-    "ocolta": {
-      "type": "http",
-      "url": "https://app.ocolta.com/mcp"
-    }
-  }
-}
-```
+Use the client's normal remote-MCP authorization flow. Credentials stay in the client's secure credential store; do not paste them into chat.
 
-Use your client's normal remote-MCP authorization flow. This package contains no API keys, bearer tokens, client secrets, reviewer identities or private fixtures. It runs no local shell commands, lifecycle hooks or telemetry collectors.
+## Included workflows
+
+- [ocolta-review-document-signals](skills/ocolta-review-document-signals/SKILL.md): Explain categorical signals from an existing purchased Ocolta document review, compare accessible summaries, or recover a recent result without exposing document text.
+- [ocolta-verification-follow-up](skills/ocolta-verification-follow-up/SKILL.md): Prepare neutral human follow-up questions from an Ocolta categorical result or user-described concern, without deciding authenticity or eligibility.
 
 ## Example requests
 
-- Show my recoverable Ocolta review summaries.
-- What are this saved review’s categorical signals and confidence?
-- Show indicator counts without revealing document text.
+- Explain the categorical signals in my existing review.
+- Recover my recent review using the connected purchase.
+- Draft neutral follow-up questions for a human reviewer.
 
 ## Workflow boundaries
 
 Read only owner-scoped existing review summaries. Preserve categorical signals, confidence and counts without exposing original document text. These are review signals; do not turn them into legal, medical or psychological diagnoses or create a new document assessment through these tools.
 
-Connection and installation do not themselves authorize paid work, purchases, communication to other people, or arbitrary changes to resources. Follow the user's actual request and the current server schema. Where an action needs confirmation, identify the exact resource and consequence before invoking it.
+Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 
-## Documentation and support
+Documentation: https://app.ocolta.com/workspace/integrations
 
-- [Official documentation](https://app.ocolta.com/workspace/integrations)
-- [Support](https://app.ocolta.com/workspace/integrations)
-- [Privacy](https://app.ocolta.com/legal/privacy)
-- [Terms](https://ocolta.com/legal/terms)
-- [Existing Glama connector](https://glama.ai/mcp/connectors/com.soxoa/ocolta-review-summaries)
-
-## License
-
-The distribution metadata, configuration, documentation and skill instructions are licensed under MIT. This license does not license the hosted application implementation or replace the product's service terms.
+These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.

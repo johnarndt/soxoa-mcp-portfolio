@@ -1,8 +1,8 @@
 {
   "id": "ocolta",
   "name": "ocolta",
-  "version": "1.0.1",
-  "description": "Read your existing categorical document review signals, confidence and indicator counts.",
+  "version": "1.0.3",
+  "description": "Explain categorical document-review signals and prepare neutral human follow-up questions.",
   "author": {
     "name": "Soxoa LLC",
     "email": "john@soxoa.com",

@@ -1,7 +1,7 @@
 {
   "name": "dokyumi",
-  "version": "1.0.4",
-  "description": "Extract attached documents with saved schemas and review confidence and validation.",
+  "version": "1.1.1",
+  "description": "Prepare saved extraction schemas, preflight exact documents and processing charges, and review or export owned results.",
   "author": {
     "name": "Soxoa LLC",
     "email": "hello@dokyumi.com",
