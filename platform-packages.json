@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "openai": {
+    "afterglow": {
+      "pluginName": "afterglow-checklists",
+      "version": "1.0.6",
+      "displayName": "Afterglow",
+      "serverKey": "afterglow-api",
+      "technicalId": "plugin_asdk_app_6ae0f64a661c8191a817385b15c81c5a",
+      "mcpServer": {
+        "type": "streamable-http",
+        "url": "https://api.withafterglow.com/mcp",
+        "extensions": {
+          "com.openai": {
+            "auth": {
+              "type": "oauth",
+              "client": {
+                "mode": "dcr"
+              },
+              "authorizationServerBase": "https://api.withafterglow.com",
+              "resource": "https://api.withafterglow.com/mcp",
+              "registrationUrl": "https://api.withafterglow.com/oauth/register",
+              "authorizationUrl": "https://api.withafterglow.com/oauth/authorize",
+              "tokenUrl": "https://api.withafterglow.com/oauth/token",
+              "baseScopes": [
+                "openid",
+                "email",
+                "checklists:read",
+                "checklists:write"
+              ]
+            }
+          }
+        }
+      },
+      "releaseNotes": "1.0.6: Canonical Afterglow API connection in a new OpenAI entry because the earlier entry cannot change MCP server configuration. Website, policy URLs and workflow skill content retain the verified canonical-domain 1.0.5 behavior."
+    }
+  }
+}
