@@ -11,7 +11,7 @@
 | [Postedly](plugins/postedly/README.md) | 6 | OAuth 2.1 / PKCE for connected owner resources. |
 | [Portravo](plugins/portravo/README.md) | 3 | OAuth 2.1 / PKCE for connected owner resources. |
 | [Dokyumi](plugins/dokyumi/README.md) | 3 | OAuth 2.1 / PKCE for connected owner resources. |
-| [Afterglow](plugins/afterglow/README.md) | 1 | OAuth 2.1 / PKCE for connected owner resources. |
+| [Afterglow](plugins/afterglow/README.md) · [Website](https://withafterglow.com) | 1 | OAuth 2.1 / PKCE for connected owner resources. |
 | [Dibatto](plugins/dibatto/README.md) | 2 | OAuth 2.1 / PKCE for connected owner resources. |
 | [Ocolta](plugins/ocolta/README.md) | 2 | OAuth 2.1 / PKCE for connected owner resources. |
 | [CasaCaddy](plugins/casacaddy/README.md) | 1 | Use native CasaCaddy Assistant pairing and the normal OAuth connection for the eligible installation. |

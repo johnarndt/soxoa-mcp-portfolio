@@ -189,14 +189,14 @@
       "slug": "afterglow",
       "name": "Afterglow",
       "description": "Turn connected separation checklists into practical next steps and save confirmed item progress.",
-      "website": "https://afterglow-lime.vercel.app",
-      "documentation": "https://afterglow-lime.vercel.app/developers",
-      "mcpEndpoint": "https://afterglow-lime.vercel.app/mcp",
+      "website": "https://withafterglow.com",
+      "documentation": "https://api.withafterglow.com/developers",
+      "mcpEndpoint": "https://api.withafterglow.com/mcp",
       "transport": "streamable-http",
       "authentication": "oauth2.1_pkce",
-      "privacy": "https://afterglow-lime.vercel.app/privacy",
-      "terms": "https://afterglow-lime.vercel.app/terms",
-      "support": "https://afterglow-lime.vercel.app/support",
+      "privacy": "https://api.withafterglow.com/privacy",
+      "terms": "https://api.withafterglow.com/terms",
+      "support": "https://api.withafterglow.com/support",
       "defaultPrompts": [
         "Help me choose manageable next steps from my connected checklist.",
         "Show what is still open without changing it.",
@@ -204,7 +204,7 @@
       ],
       "workflowBounds": "Read the user's applicable legal, money, home or coparenting checklist and preserve its returned disclaimer, audience filter, onboarding and plan limits. Save only the exact item and todo, done or not-applicable state the user confirms. Repeating the same item and state preserves its completion timestamp. These practical breakup/separation checklists do not expose the user's story, coaching history or private check-ins.",
       "registryName": "com.soxoa/afterglow-checklists",
-      "packageVersion": "1.0.4",
+      "packageVersion": "1.0.5",
       "skills": [
         "afterglow-practical-next-steps"
       ]
