@@ -4,7 +4,7 @@ Source and the [versioned release archives](https://github.com/johnarndt/soxoa-m
 
 ## OpenAI directory
 
-The following states were observed in the Soxoa organization’s submission portal on 2026-10-27. ChatGPT and Codex share the public directory; these states concern review of the versions below.
+The following states were observed in the Soxoa organization’s submission portal on 2026-10-27. Nine updated submissions covering 22 customer skills are in review. ChatGPT and Codex share the public directory; review does not establish approval.
 
 | Product | Version | Observed state |
 | --- | --- | --- |
@@ -15,13 +15,13 @@ The following states were observed in the Soxoa organization’s submission port
 | Portravo | 1.1.1 | In review |
 | Ocolta | 1.0.3 | In review |
 | Dibatto | 1.0.6 | In review |
-| Dokyumi | 1.1.1 | Draft saved; submission rejected as ineligible |
-| Afterglow | 1.0.4 | Draft saved; submission rejected as ineligible |
-| Postedly | 1.2.4 | Existing review preserved |
-| CasaCaddy | 1.0.3 | Existing review on hold preserved |
-| Soxoa Ops | 0.2.0 | Draft saved; skills-only submission intake blocked |
+| Dokyumi | 1.1.2 | In review |
+| Afterglow | 1.0.6 (`afterglow-checklists`) | In review; canonical entry configured |
+| Postedly | 1.2.4 | Existing In review entry preserved |
+| CasaCaddy | 1.0.3 | Existing In review, Configured entry preserved |
+| Soxoa Ops | 0.2.0 | Draft saved; all 15 skill checks passed; intake blocked |
 
-Dokyumi and Afterglow returned “The attached app is not eligible for review”. Their saved drafts are not submitted versions. Postedly 1.3.1 and CasaCaddy 1.0.5 ZIPs are public; they do not replace the earlier reviews listed above.
+Earlier Dokyumi and Afterglow draft attempts returned “The attached app is not eligible for review”. Dokyumi 1.1.2 has since entered review. Afterglow required a new OpenAI entry after the portal instructed “Create a new plugin to change MCP servers”. The new entry is `afterglow-checklists` 1.0.6, display name Afterglow, server key `afterglow-api`, technical ID `plugin_asdk_app_6ae0f64a661c8191a817385b15c81c5a`. Its MCP resource is `https://api.withafterglow.com/mcp`; it is configured and in review after ownership verification, dedicated OAuth authorization, three-tool discovery and skill checks. The earlier Afterglow 1.0.4 entry remains Unavailable/Configured and retained. Postedly 1.3.1 and CasaCaddy 1.0.5 ZIPs are public; they do not replace the earlier reviews listed above.
 
 Soxoa Ops submission returned “We are not accepting more skills-only submissions at this time.” Its public source and ZIP remain available independently of that intake restriction. No directory approval is claimed for the Ops draft.
 
@@ -32,3 +32,5 @@ Native Hermes direct-tap checks passed for all 29 customer skills. This verifies
 [Hermes catalog PR #145658](https://github.com/NousResearch/hermes-agent/pull/145658) proposes Postedly, MentionedOn and Intakra. It is pending maintainer review and merge. The direct setup in the [README](README.md#hermes) is available while the proposal is pending; the proposal is not Nous approval.
 
 The Postedly Gemini CLI extension and direct MCP configurations are also public. Gallery indexing, normal account acceptance and paid delivery remain separate checks. This dated snapshot does not promise rankings, recommendations or signups.
+
+The native/Claude Afterglow plugin remains `afterglow` 1.0.5. The OpenAI identity override in `platform-packages.json` keeps future archives aligned with the new entry. The public OpenAI-format companion is sanitized; private reviewer cases and credentials are not distributed. Earlier release assets remain unchanged.

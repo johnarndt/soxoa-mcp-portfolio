@@ -61,6 +61,8 @@ Native package validation passed; authenticated task completion and gallery inde
 python3 scripts/build-distribution.py --output /tmp/soxoa-product-packages
 ```
 
+For a single product, add `--only afterglow`. When an OpenAI entry has a different package identity, `platform-packages.json` preserves its plugin name, version and MCP server key separately from the native plugin.
+
 This builds public plugin archives without network calls. Existing platform submissions and reviewed versions are separate from these new source packages.
 
 ## Practical workflow evaluation guides

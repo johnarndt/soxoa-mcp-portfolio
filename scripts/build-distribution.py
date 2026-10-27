@@ -27,14 +27,23 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--portal-template", type=Path)
+    parser.add_argument("--only", help="Comma-separated product slugs to build; other products are left untouched.")
     args = parser.parse_args()
     catalog = json.loads((ROOT / "skills-catalog.json").read_text())
     products = json.loads((ROOT / "products.json").read_text())
+    platform_path = ROOT / "platform-packages.json"
+    platform_packages = json.loads(platform_path.read_text()) if platform_path.exists() else {}
+    selected = set(args.only.split(",")) if args.only is not None else None
+    known = {product["slug"] for product in catalog["products"]}
+    if selected is not None and (not selected or not selected <= known):
+        parser.error("--only must name existing product slugs")
     marketplace_path = ROOT / ".claude-plugin/marketplace.json"
     marketplace = json.loads(marketplace_path.read_text())
     receipts = []
     for product in catalog["products"]:
         slug = product["slug"]
+        if selected is not None and slug not in selected:
+            continue
         version = product["version"]
         plugin = ROOT / "plugins" / slug
         skills_dir = plugin / "skills"
@@ -87,15 +96,24 @@ def main():
             shutil.copytree(skills_dir, target / "skills")
             manifest_path = target / "plugin.json"
             manifest = json.loads(manifest_path.read_text())
-            manifest.update(version=version, description=product["longDescription"])
+            override = platform_packages.get("openai", {}).get(slug, {})
+            portal_version = override.get("version", version)
+            portal_name = override.get("pluginName", manifest["name"])
+            manifest.update(name=portal_name, version=portal_version, description=product["longDescription"])
             ext = manifest.setdefault("extensions", {}).setdefault("com.openai", {})
             interface = ext.setdefault("interface", {})
             interface.update(longDescription=product["longDescription"], defaultPrompt=product["defaultPrompts"])
-            ext.setdefault("publication", {})["release_notes"] = f"{version}: Updated portable workflow skills and current account, consent and recovery guidance. Package validation is separate from connected account acceptance and directory review."
+            if override.get("displayName"):
+                interface["displayName"] = override["displayName"]
+            ext.setdefault("publication", {})["release_notes"] = override.get("releaseNotes", f"{portal_version}: Updated portable workflow skills and current account, consent and recovery guidance. Package validation is separate from connected account acceptance and directory review.")
+            if "mcpServer" in override:
+                write_json(target / "mcp.json", {"$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+                           "mcpServers": {override["serverKey"]: override["mcpServer"]}})
             write_json(manifest_path, manifest)
-            portal_archive = args.output / "openai" / f"{slug}-{version}.zip"
+            portal_archive = args.output / "openai" / f"{override.get('pluginName', slug)}-{portal_version}.zip"
             zip_tree(target, portal_archive)
-            receipt.update(openaiArchive=str(portal_archive.resolve()),
+            receipt.update(openaiPluginName=portal_name, openaiVersion=portal_version,
+                           openaiServerKey=override.get("serverKey"), openaiArchive=str(portal_archive.resolve()),
                            openaiSha256=hashlib.sha256(portal_archive.read_bytes()).hexdigest())
         receipts.append(receipt)
     write_json(marketplace_path, marketplace)
