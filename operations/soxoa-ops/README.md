@@ -4,9 +4,9 @@ Fifteen portable operating skills for feedback, signup visibility, work briefs, 
 
 This package contains instructions and an icon. It has no MCP configuration, credentials, hooks, executables or background workers. Skills use the host’s available authorized sources and tools, and return a supported partial result or setup handoff when a dependency is missing. Installing instructions does not connect an account or grant permission for paid work, messages or deployment.
 
-## Prepared package
+## Public package and directory status
 
-Version 0.2.0 is prepared for review, not published or submitted. Both the portable root manifest and Codex/Claude compatibility manifests are included. The `skills/` directory contains the complete instructions; there are no private repository dependencies.
+Version 0.2.0 source and the [skills-only ZIP](https://github.com/johnarndt/soxoa-mcp-portfolio/releases/download/agent-skills-2026-10-27/soxoa-ops-0.2.0-skills-only.zip) are publicly released. As of 2026-10-27, an OpenAI draft is saved, but submission is blocked by the portal message: “We are not accepting more skills-only submissions at this time.” This package has not received ChatGPT/Codex directory approval. See the [dated distribution status](../../DISTRIBUTION_STATUS.md). Both the portable root manifest and Codex/Claude compatibility manifests are included. The `skills/` directory contains the complete instructions; there are no private repository dependencies.
 
 Use a compatible host’s documented local-plugin or skills-only ZIP import flow. Complete listing review and clean-environment testing before any public submission. No account setup is performed automatically.
 
@@ -30,4 +30,4 @@ Use a compatible host’s documented local-plugin or skills-only ZIP import flow
 
 The handoff skill applies when a handoff is requested. Signup alerts, storage updates, external submissions and recurring work occur only within the actual user request and supported tools. Drafting and static validation do not prove an email was delivered, a campaign was launched or an automation was installed.
 
-Source: Soxoa’s MIT-licensed public `soxoa-claude-plugins` repository at commit `2bc7d09dbae17735ddfd008eeaf75bba1b02e4af`. These adaptations are locally prepared instruction packages; behavior and publication evidence are tracked outside the ZIP.
+Source: Soxoa’s MIT-licensed public `soxoa-claude-plugins` repository at commit `2bc7d09dbae17735ddfd008eeaf75bba1b02e4af`. These adaptations are publicly released instruction packages; behavior evidence and directory review status are tracked separately.
