@@ -1,7 +1,7 @@
 {
   "name": "mentionedon",
-  "version": "1.1.1",
-  "description": "Review supplied AI-discovery evidence and prioritize visibility improvements.",
+  "version": "1.2.1",
+  "description": "Review supplied discovery evidence and connected visibility reports, prepare website fixes, and organize actual AI-answer captures.",
   "author": {
     "name": "Soxoa LLC",
     "email": "hello@mentioned-on.com",

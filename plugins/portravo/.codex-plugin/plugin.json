@@ -1,8 +1,8 @@
 {
   "id": "portravo",
   "name": "portravo",
-  "version": "1.0.2",
-  "description": "Review construction plan takeoffs and download estimates after review and pricing.",
+  "version": "1.1.1",
+  "description": "Prepare authorized construction takeoffs, review source gaps and quantities, and download reviewed estimates.",
   "author": {
     "name": "Soxoa LLC",
     "email": "hello@portravo.com",

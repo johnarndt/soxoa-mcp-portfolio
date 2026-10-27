@@ -1,8 +1,6 @@
 # Intakra MCP integration
 
-Score supplied buying signals and prepare a review-only why-now brief.
-
-This plugin connects a compatible MCP client to Intakra's hosted first-party endpoint and adds a scoped workflow skill. The public distribution files contain configuration, documentation and skill instructions. Product accounts, owner permissions, current plan entitlements and service terms continue to apply.
+Review supplied buying evidence and owned account opportunities, and configure explicitly requested workspace changes.
 
 ## Connection
 
@@ -10,41 +8,28 @@ Endpoint: https://intakra.com/mcp
 
 Transport: Streamable HTTP (client config type `http`).
 
-No authentication. Public read-only tools.
+Supplied-evidence tools are public. Connected workspace tools require normal OAuth 2.1 / PKCE consent.
 
-```json
-{
-  "mcpServers": {
-    "intakra": {
-      "type": "http",
-      "url": "https://intakra.com/mcp"
-    }
-  }
-}
-```
+Use the client's normal remote-MCP authorization flow. Credentials stay in the client's secure credential store; do not paste them into chat.
 
-Use your client's normal remote-MCP authorization flow. This package contains no API keys, bearer tokens, client secrets, reviewer identities or private fixtures. It runs no local shell commands, lifecycle hooks or telemetry collectors.
+## Included workflows
+
+- [intakra-buying-signal-review](skills/intakra-buying-signal-review/SKILL.md): Use when a user wants to score supplied account-fit and buying-signal evidence or prepare a review-only why-now brief.
+- [intakra-account-opportunities](skills/intakra-account-opportunities/SKILL.md): Prioritize owned Intakra accounts, review dated buying signals and changes, find relevant contact evidence, or prepare a daily account brief.
+- [intakra-workspace-setup](skills/intakra-workspace-setup/SKILL.md): Set an Intakra offering, add explicitly chosen company domains, or request and review account suggestions for the user’s workspace.
 
 ## Example requests
 
-- Score these supplied account-fit facts and recent business signals.
-- Prepare a why-now review from this supplied tech-stack change and flag unverified intent.
-- Flag unsupported budget, authority, or buying-intent claims.
+- Prioritize my owned accounts using their dated evidence.
+- Prepare a why-now review from these supplied facts.
+- Help me review account suggestions before I choose what to add.
 
 ## Workflow boundaries
 
-Use caller-supplied account fit and dated buying-signal evidence. Mark unverified intent and prepare review-only briefs; do not contact prospects.
+Use dated supplied or owned-workspace evidence; do not infer verified buying intent or contact prospects. Obtain authorization for the actual account additions, offering changes or suggestion requests. Saved lists and job status do not prove a fresh research result.
 
-Connection and installation do not themselves authorize paid work, purchases, communication to other people, or arbitrary changes to resources. Follow the user's actual request and the current server schema. Where an action needs confirmation, identify the exact resource and consequence before invoking it.
+Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 
-## Documentation and support
+Documentation: https://intakra.com/mcp-guide
 
-- [Official documentation](https://intakra.com/mcp-guide)
-- [Support](https://intakra.com/contact)
-- [Privacy](https://intakra.com/privacy)
-- [Terms](https://intakra.com/terms)
-- [Existing Glama connector](https://glama.ai/mcp/connectors/com.intakra/buying-signal-review)
-
-## License
-
-The distribution metadata, configuration, documentation and skill instructions are licensed under MIT. This license does not license the hosted application implementation or replace the product's service terms.
+These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.

@@ -1,8 +1,6 @@
 # CasaCaddy MCP integration
 
-Read maintenance requirements, prepare confirmed guides and check device-owned guide jobs.
-
-This plugin connects a compatible MCP client to CasaCaddy's hosted first-party endpoint and adds a scoped workflow skill. The public distribution files contain configuration, documentation and skill instructions. Product accounts, owner permissions, current plan entitlements and service terms continue to apply.
+Use a paired installation to prepare bounded home-maintenance guides and recover saved requests.
 
 ## Connection
 
@@ -10,41 +8,26 @@ Endpoint: https://api.casacaddy.com/mcp
 
 Transport: Streamable HTTP (client config type `http`).
 
-OAuth 2.1 with PKCE through the MCP client. Account tools use the connected owner identity. Public metadata discovery, where available, does not grant account access.
+Use native CasaCaddy Assistant pairing and the normal OAuth connection for the eligible installation.
 
-```json
-{
-  "mcpServers": {
-    "casacaddy": {
-      "type": "http",
-      "url": "https://api.casacaddy.com/mcp"
-    }
-  }
-}
-```
+Use the client's normal remote-MCP authorization flow. Credentials stay in the client's secure credential store; do not paste them into chat.
 
-Use your client's normal remote-MCP authorization flow. This package contains no API keys, bearer tokens, client secrets, reviewer identities or private fixtures. It runs no local shell commands, lifecycle hooks or telemetry collectors.
+## Included workflows
+
+- [casacaddy-plan-home-maintenance](skills/casacaddy-plan-home-maintenance/SKILL.md): Get bounded maintenance guidance for user-described appliances through a paired CasaCaddy installation, recover a saved guide, or choose a safe next task.
 
 ## Example requests
 
-- Show CasaCaddy guide requirements for my device.
-- Check the status of my maintenance-guide job.
-- Review my saved guide before preparing another.
+- Show the maintenance guidance available to my paired installation.
+- Help me prepare a bounded guide for this appliance.
+- Recover the saved guide request I already started.
 
 ## Workflow boundaries
 
 Read the maintenance requirements and account/device-owned guide job. Ask for confirmation before preparing a guide, preserve the request key on a retry, and report its actual queued, processing, failed or completed state. Guide preparation is not evidence the maintenance work was performed.
 
-Connection and installation do not themselves authorize paid work, purchases, communication to other people, or arbitrary changes to resources. Follow the user's actual request and the current server schema. Where an action needs confirmation, identify the exact resource and consequence before invoking it.
+Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 
-## Documentation and support
+Documentation: https://api.casacaddy.com/developers
 
-- [Official documentation](https://api.casacaddy.com/developers)
-- [Support](https://api.casacaddy.com/support)
-- [Privacy](https://api.casacaddy.com/privacy)
-- [Terms](https://api.casacaddy.com/terms)
-- [Existing Glama connector](https://glama.ai/mcp/connectors/com.soxoa/casacaddy-maintenance)
-
-## License
-
-The distribution metadata, configuration, documentation and skill instructions are licensed under MIT. This license does not license the hosted application implementation or replace the product's service terms.
+These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.

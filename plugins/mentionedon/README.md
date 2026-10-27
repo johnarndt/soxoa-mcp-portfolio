@@ -1,8 +1,6 @@
 # MentionedOn MCP integration
 
-Review supplied AI-discovery evidence and prioritize visibility improvements.
-
-This plugin connects a compatible MCP client to MentionedOn's hosted first-party endpoint and adds a scoped workflow skill. The public distribution files contain configuration, documentation and skill instructions. Product accounts, owner permissions, current plan entitlements and service terms continue to apply.
+Review supplied discovery evidence and connected visibility reports, prepare website fixes, and organize actual AI-answer captures.
 
 ## Connection
 
@@ -10,41 +8,29 @@ Endpoint: https://mentioned-on.com/mcp
 
 Transport: Streamable HTTP (client config type `http`).
 
-No authentication. Public read-only tools.
+Supplied-evidence tools are public. Connected workspace tools require normal OAuth 2.1 / PKCE consent.
 
-```json
-{
-  "mcpServers": {
-    "mentionedon": {
-      "type": "http",
-      "url": "https://mentioned-on.com/mcp"
-    }
-  }
-}
-```
+Use the client's normal remote-MCP authorization flow. Credentials stay in the client's secure credential store; do not paste them into chat.
 
-Use your client's normal remote-MCP authorization flow. This package contains no API keys, bearer tokens, client secrets, reviewer identities or private fixtures. It runs no local shell commands, lifecycle hooks or telemetry collectors.
+## Included workflows
+
+- [mentionedon-discovery-evidence](skills/mentionedon-discovery-evidence/SKILL.md): Use when a user wants to assess supplied AI-discovery signals, prioritize visibility gaps, or summarize dated model-capture evidence.
+- [mentionedon-visibility-review](skills/mentionedon-visibility-review/SKILL.md): Review a connected MentionedOn business’s saved AI visibility, competitors and comparable changes, or identify the next action from its existing report.
+- [mentionedon-website-fixes](skills/mentionedon-website-fixes/SKILL.md): Inspect an owned business website, save schema and copy from confirmed facts, and verify that reviewed MentionedOn fixes were installed.
+- [mentionedon-answer-capture](skills/mentionedon-answer-capture/SKILL.md): Prepare a repeatable log and prompt set for actual AI-answer captures supplied by the user, preserving assistant surface, date and missing results.
 
 ## Example requests
 
-- Assess these supplied page signals for AI discovery readiness.
-- Turn these missing visibility signals into a prioritized action plan.
-- Summarize these dated AI mention captures and preserve skipped requests and uncertainty.
+- Review my latest saved visibility report and show its capture dates.
+- Prepare website fixes from my confirmed business facts.
+- Help me capture and compare actual AI answers consistently.
 
 ## Workflow boundaries
 
-Use supplied, dated evidence. Preserve skipped or uncertain captures. Do not claim these tools run fresh model scans or guarantee a recommendation.
+Public evidence is supplied and dated. Connected reports are saved history, not a new model scan. Website tools save reviewed revisions for owned businesses; they do not publish a website. Respect current monitoring entitlements.
 
-Connection and installation do not themselves authorize paid work, purchases, communication to other people, or arbitrary changes to resources. Follow the user's actual request and the current server schema. Where an action needs confirmation, identify the exact resource and consequence before invoking it.
+Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 
-## Documentation and support
+Documentation: https://mentioned-on.com/developers/mcp
 
-- [Official documentation](https://mentioned-on.com/developers/mcp)
-- [Support](https://mentioned-on.com/support)
-- [Privacy](https://mentioned-on.com/privacy)
-- [Terms](https://mentioned-on.com/terms)
-- [Existing Glama connector](https://glama.ai/mcp/connectors/com.mentioned-on/ai-discovery-readiness)
-
-## License
-
-The distribution metadata, configuration, documentation and skill instructions are licensed under MIT. This license does not license the hosted application implementation or replace the product's service terms.
+These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.

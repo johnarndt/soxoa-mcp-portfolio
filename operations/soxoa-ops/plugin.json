@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "soxoa-ops",
+  "version": "0.2.0",
+  "description": "Fifteen operating workflows for evidence-based feedback, work briefs, signup visibility, marketing, writing and automation scoping. Uses only the authorized files and tools already available; no bundled server, credentials, hooks, scheduled jobs or automatic sending.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "hello@soxoa.com",
+    "url": "https://soxoa.com"
+  },
+  "homepage": "https://soxoa.com",
+  "repository": "https://github.com/johnarndt/soxoa-claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "operations",
+    "customer-feedback",
+    "evidence",
+    "writing",
+    "automation"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Soxoa Ops",
+        "shortDescription": "Review and run business work",
+        "longDescription": "Fifteen operating workflows for evidence-based feedback, work briefs, signup visibility, marketing, writing and automation scoping. Uses only the authorized files and tools already available; no bundled server, credentials, hooks, scheduled jobs or automatic sending.",
+        "developerName": "Soxoa LLC",
+        "category": "Business & Operations",
+        "capabilities": [],
+        "websiteURL": "https://soxoa.com",
+        "privacyPolicyURL": "https://soxoa.com/privacy",
+        "termsOfServiceURL": "https://soxoa.com/terms",
+        "supportURL": "https://soxoa.com/support",
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png",
+        "defaultPrompt": [
+          "Group this supplied customer feedback into a ranked issue list.",
+          "Write a work brief from these authorized records.",
+          "Audit this draft’s claims and show what needs evidence."
+        ]
+      }
+    }
+  }
+}

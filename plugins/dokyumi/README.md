@@ -1,8 +1,6 @@
 # Dokyumi MCP integration
 
-Extract attached documents with saved schemas and review confidence and validation.
-
-This plugin connects a compatible MCP client to Dokyumi's hosted first-party endpoint and adds a scoped workflow skill. The public distribution files contain configuration, documentation and skill instructions. Product accounts, owner permissions, current plan entitlements and service terms continue to apply.
+Prepare saved extraction schemas, preflight exact documents and processing charges, and review or export owned results.
 
 ## Connection
 
@@ -10,41 +8,28 @@ Endpoint: https://dokyumi.com/mcp
 
 Transport: Streamable HTTP (client config type `http`).
 
-OAuth 2.1 with PKCE through the MCP client. Account tools use the connected owner identity. Public metadata discovery, where available, does not grant account access.
+OAuth 2.1 / PKCE for connected owner resources.
 
-```json
-{
-  "mcpServers": {
-    "dokyumi": {
-      "type": "http",
-      "url": "https://dokyumi.com/mcp"
-    }
-  }
-}
-```
+Use the client's normal remote-MCP authorization flow. Credentials stay in the client's secure credential store; do not paste them into chat.
 
-Use your client's normal remote-MCP authorization flow. This package contains no API keys, bearer tokens, client secrets, reviewer identities or private fixtures. It runs no local shell commands, lifecycle hooks or telemetry collectors.
+## Included workflows
+
+- [dokyumi-schema-starters](skills/dokyumi-schema-starters/SKILL.md): Choose a saved Dokyumi extraction schema or preview and save a document workflow starter with the user’s agreement.
+- [dokyumi-extract-document](skills/dokyumi-extract-document/SKILL.md): Preflight an authorized document and saved Dokyumi schema, distinguish subscription credits from BYOK provider charges, and extract exact file bytes for source review.
+- [dokyumi-review-export](skills/dokyumi-review-export/SKILL.md): Find saved Dokyumi extractions and exceptions, review uncertain fields, and export selected existing results as CSV or Excel.
 
 ## Example requests
 
-- List my saved Dokyumi extraction schemas.
-- Find my saved invoice schema before extracting this attached invoice.
-- Show a saved extraction and identify values that need review.
+- Help me choose a saved schema for this document.
+- Check the processing mode, cost authorization and limits before extraction.
+- Review uncertain fields and export my existing extraction.
 
 ## Workflow boundaries
 
-Find the user's saved schema before extracting the exact supplied document. Ask for explicit existing-credit approval before a fresh extraction. Preserve its request key on uncertain responses and same-request recovery. Report actual confidence, validation and provider provenance; confidence is not an accuracy guarantee. Never buy or refill credits.
+Preflight before processing. Distinguish existing subscription credits from separate BYOK provider charges and obtain the applicable authorization. Preserve exact source bytes, schema and request key, review uncertain fields, and respect storage and retention limits.
 
-Connection and installation do not themselves authorize paid work, purchases, communication to other people, or arbitrary changes to resources. Follow the user's actual request and the current server schema. Where an action needs confirmation, identify the exact resource and consequence before invoking it.
+Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 
-## Documentation and support
+Documentation: https://dokyumi.com/docs/mcp
 
-- [Official documentation](https://dokyumi.com/docs/mcp)
-- [Support](https://dokyumi.com/docs/mcp)
-- [Privacy](https://dokyumi.com/privacy)
-- [Terms](https://dokyumi.com/terms)
-- [Existing Glama connector](https://glama.ai/mcp/connectors/com.dokyumi/document-extraction)
-
-## License
-
-The distribution metadata, configuration, documentation and skill instructions are licensed under MIT. This license does not license the hosted application implementation or replace the product's service terms.
+These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.

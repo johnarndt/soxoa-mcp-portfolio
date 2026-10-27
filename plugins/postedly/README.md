@@ -1,8 +1,6 @@
 # Postedly MCP integration
 
-Physical mail MCP: letters, certified mail, postcards, fax, handwritten cards; review before payment
-
-This plugin connects a compatible MCP client to Postedly's hosted first-party endpoint and adds a scoped workflow skill. The public distribution files contain configuration, documentation and skill instructions. Product accounts, owner permissions, current plan entitlements and service terms continue to apply.
+Prepare letters, certified mail, fax, postcards and handwritten cards with private browser approval; track orders and reuse saved correspondence.
 
 ## Connection
 
@@ -10,47 +8,31 @@ Endpoint: https://postedly.com/mcp/send
 
 Transport: Streamable HTTP (client config type `http`).
 
-OAuth 2.1 with PKCE through the MCP client. Account tools use the connected owner identity. Public metadata discovery, where available, does not grant account access.
+OAuth 2.1 / PKCE for connected owner resources.
 
-```json
-{
-  "mcpServers": {
-    "postedly": {
-      "type": "http",
-      "url": "https://postedly.com/mcp/send"
-    }
-  }
-}
-```
+Use the client's normal remote-MCP authorization flow. Credentials stay in the client's secure credential store; do not paste them into chat.
 
-Use your client's normal remote-MCP authorization flow. This package contains no API keys, bearer tokens, client secrets, reviewer identities or private fixtures. It runs no local shell commands, lifecycle hooks or telemetry collectors.
+## Included workflows
+
+- [postedly-saved-correspondence](skills/postedly-saved-correspondence/SKILL.md): Save or reuse private Postedly contacts and correspondence drafts, find prior orders, or export recorded delivery evidence.
+- [postedly-track-orders](skills/postedly-track-orders/SKILL.md): Check existing Postedly orders and explain recorded payment, fulfillment, and delivery evidence. Use for order status, a missing confirmation, or an uncertain send; do not create a replacement order or infer a receipt from a quote.
+- [postedly-fax-document](skills/postedly-fax-document/SKILL.md): Fax the user’s actual finished PDF to one supported US number through Postedly, with final proof, quote and separate browser approval.
+- [postedly-mail-letter](skills/postedly-mail-letter/SKILL.md): Write and mail a finished letter or mail an existing PDF through Postedly, including supported US certified mail with tracking and browser review.
+- [postedly-send-postcard](skills/postedly-send-postcard/SKILL.md): Prepare two-sided postcard artwork from Postedly’s live template and obtain a quote and private browser approval for one US recipient.
+- [postedly-handwritten-card](skills/postedly-handwritten-card/SKILL.md): Choose an available Postedly card and handwriting style, prepare the exact message and closing, and obtain private review and payment approval.
 
 ## Example requests
 
-- What can Postedly send right now? Show available options.
-- Prepare mailing this finished PDF and give me the private link to review every page and the total. Do not pay or send yet.
-- Show handwritten card designs and writing styles for a thank-you note.
-- Check the recorded status of my existing Postedly order.
+- Prepare a quote and private review link for mailing this finished PDF.
+- Help me choose a handwritten card and review the exact message.
+- Check whether my existing order was paid, sent and delivered.
 
 ## Workflow boundaries
 
-Check `postedly_services` or the [live catalog](https://postedly.com/api/catalog) before preparing a fax, letter, certified mail, postcard or handwritten-card quote. Use the returned availability and requirements; for handwritten cards, also check the product catalog. The object beta has a separate manual request path and does not support automated document orders.
+Check postedly_services or the live catalog before quoting fax, letters, certified mail, postcards or handwritten cards; availability is determined by the current response. Check the product catalog for handwritten cards. Use the connected OAuth owner and the actual intended document: preserve provided PDF bytes unless changes were requested; finish and inspect every page of a newly requested letter before upload. Intentional forms and test documents remain valid when requested. Review every page of the final proof; card samples are not a rendered proof of the exact message. Uploading, quoting and opening private review do not approve, charge or send. Payment requires the user's explicit browser review. Report payment and fulfillment separately. The object beta uses a separate manual request and is not an automated document order.
 
-Use the actual intended document. Preserve a provided PDF's exact bytes unless changes were requested. For a newly requested letter, finish its actual wording, export it to PDF, and render and inspect every page before uploading. Do not substitute a sample, placeholder or writing instructions; intentional forms, templates and test documents remain valid when requested. If the intended file is missing or inaccessible, use a private upload handoff or explain what is missing. A checksum verifies byte integrity, not content correctness.
+Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 
-Review every page of the final proof, including the actual body and any generated cover or postal layout. Card samples are not a rendered proof of the user's exact message. Uploading, quoting and opening private review do not approve, charge or send. Payment requires the user's explicit browser review of the exact proof or item, recipient, total and terms. Report payment and fulfillment separately.
+Documentation: https://postedly.com/developers
 
-Connection and installation do not themselves authorize paid work, purchases, communication to other people, or arbitrary changes to resources. Follow the user's actual request and the current server schema. Where an action needs confirmation, identify the exact resource and consequence before invoking it.
-
-## Documentation and support
-
-- [Official documentation](https://postedly.com/developers)
-- [Agent file-transfer, content and recovery guide](https://postedly.com/agent-guide.md)
-- [Support](https://postedly.com/support)
-- [Privacy](https://postedly.com/privacy)
-- [Terms](https://postedly.com/terms)
-- [Existing Glama connector](https://glama.ai/mcp/connectors/com.postedly/send)
-
-## License
-
-The distribution metadata, configuration, documentation and skill instructions are licensed under MIT. This license does not license the hosted application implementation or replace the product's service terms.
+These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.

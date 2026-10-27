@@ -11,68 +11,74 @@
     {
       "name": "soxoa",
       "source": "./plugins/soxoa",
-      "description": "Estimate illustrative automation ROI and prioritize user-described recurring workflows.",
-      "version": "1.1.1"
+      "description": "Discover recurring workflows, estimate illustrative automation value, and prepare a practical pilot and business case.",
+      "version": "1.2.1"
     },
     {
       "name": "mentionedon",
       "source": "./plugins/mentionedon",
-      "description": "Review supplied AI-discovery evidence and prioritize visibility improvements.",
-      "version": "1.1.1"
+      "description": "Review supplied discovery evidence and connected visibility reports, prepare website fixes, and organize actual AI-answer captures.",
+      "version": "1.2.1"
     },
     {
       "name": "regsentry",
       "source": "./plugins/regsentry",
-      "description": "Inspect authorized static tracking signals and review supplied consent evidence.",
-      "version": "1.1.3"
+      "description": "Inspect authorized tracking and consent evidence, compare observations, and prepare remediation and evidence exports.",
+      "version": "1.2.1"
     },
     {
       "name": "intakra",
       "source": "./plugins/intakra",
-      "description": "Score supplied buying signals and prepare a review-only why-now brief.",
-      "version": "1.1.2"
+      "description": "Review supplied buying evidence and owned account opportunities, and configure explicitly requested workspace changes.",
+      "version": "1.2.2"
     },
     {
       "name": "postedly",
       "source": "./plugins/postedly",
-      "description": "Physical mail MCP: letters, certified mail, postcards, fax, handwritten cards; review before payment",
-      "version": "1.2.5"
+      "description": "Prepare letters, certified mail, fax, postcards and handwritten cards with private browser approval; track orders and reuse saved correspondence.",
+      "version": "1.3.1"
     },
     {
       "name": "portravo",
       "source": "./plugins/portravo",
-      "description": "Review construction plan takeoffs and download estimates after review and pricing.",
-      "version": "1.0.2"
+      "description": "Prepare authorized construction takeoffs, review source gaps and quantities, and download reviewed estimates.",
+      "version": "1.1.1"
     },
     {
       "name": "dokyumi",
       "source": "./plugins/dokyumi",
-      "description": "Extract attached documents with saved schemas and review confidence and validation.",
-      "version": "1.0.4"
+      "description": "Prepare saved extraction schemas, preflight exact documents and processing charges, and review or export owned results.",
+      "version": "1.1.1"
     },
     {
       "name": "afterglow",
       "source": "./plugins/afterglow",
-      "description": "Read applicable breakup and separation checklists and save confirmed task progress.",
-      "version": "1.0.2"
+      "description": "Turn connected separation checklists into practical next steps and save confirmed item progress.",
+      "version": "1.0.4"
     },
     {
       "name": "dibatto",
       "source": "./plugins/dibatto",
-      "description": "Review saved podcast rundowns and transcripts, and prepare private episode drafts.",
-      "version": "1.0.4"
+      "description": "Prepare sourced podcast rundowns and private episode drafts; review saved transcripts and production status.",
+      "version": "1.0.6"
     },
     {
       "name": "ocolta",
       "source": "./plugins/ocolta",
-      "description": "Read your existing categorical document review signals, confidence and indicator counts.",
-      "version": "1.0.1"
+      "description": "Explain categorical document-review signals and prepare neutral human follow-up questions.",
+      "version": "1.0.3"
     },
     {
       "name": "casacaddy",
       "source": "./plugins/casacaddy",
-      "description": "Read maintenance requirements, prepare confirmed guides and check device-owned guide jobs.",
-      "version": "1.0.3"
+      "description": "Use a paired installation to prepare bounded home-maintenance guides and recover saved requests.",
+      "version": "1.0.5"
+    },
+    {
+      "name": "soxoa-ops",
+      "source": "./operations/soxoa-ops",
+      "description": "Scope recurring work, review evidence, prepare marketing materials and organize explicitly requested owner operations.",
+      "version": "0.2.0"
     }
   ]
 }

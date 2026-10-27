@@ -1,8 +1,8 @@
 {
   "id": "casacaddy",
   "name": "casacaddy",
-  "version": "1.0.3",
-  "description": "Read maintenance requirements, prepare confirmed guides and check device-owned guide jobs.",
+  "version": "1.0.5",
+  "description": "Use a paired installation to prepare bounded home-maintenance guides and recover saved requests.",
   "author": {
     "name": "Soxoa LLC",
     "email": "john@soxoa.com",

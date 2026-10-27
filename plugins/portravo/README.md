@@ -1,8 +1,6 @@
 # Portravo MCP integration
 
-Review construction plan takeoffs and download estimates after review and pricing.
-
-This plugin connects a compatible MCP client to Portravo's hosted first-party endpoint and adds a scoped workflow skill. The public distribution files contain configuration, documentation and skill instructions. Product accounts, owner permissions, current plan entitlements and service terms continue to apply.
+Prepare authorized construction takeoffs, review source gaps and quantities, and download reviewed estimates.
 
 ## Connection
 
@@ -10,41 +8,28 @@ Endpoint: https://portravo.com/mcp
 
 Transport: Streamable HTTP (client config type `http`).
 
-OAuth 2.1 with PKCE through the MCP client. Account tools use the connected owner identity. Public metadata discovery, where available, does not grant account access.
+OAuth 2.1 / PKCE for connected owner resources.
 
-```json
-{
-  "mcpServers": {
-    "portravo": {
-      "type": "http",
-      "url": "https://portravo.com/mcp"
-    }
-  }
-}
-```
+Use the client's normal remote-MCP authorization flow. Credentials stay in the client's secure credential store; do not paste them into chat.
 
-Use your client's normal remote-MCP authorization flow. This package contains no API keys, bearer tokens, client secrets, reviewer identities or private fixtures. It runs no local shell commands, lifecycle hooks or telemetry collectors.
+## Included workflows
+
+- [portravo-prepare-takeoff](skills/portravo-prepare-takeoff/SKILL.md): Check trade availability and existing-credit cost, create an owned Portravo project, attach the actual plan PDF, and start an explicitly approved takeoff.
+- [portravo-review-estimate](skills/portravo-review-estimate/SKILL.md): Recover an existing Portravo takeoff, inspect source-linked quantities and unresolved scope, and download a reviewed, priced estimate.
+- [portravo-scope-questions](skills/portravo-scope-questions/SKILL.md): Turn actual Portravo takeoff notes, unresolved lines and source gaps into an estimator checklist and draft clarification questions.
 
 ## Example requests
 
-- Show my construction takeoffs and which lines need review.
-- Create an estimate project and attach this plan PDF.
-- Download my reviewed, priced estimate as an Excel workbook.
+- Check what is required before starting a takeoff for these selected trades.
+- Review the source gaps and uncertain quantities in my existing takeoff.
+- Download the estimate only after its review and pricing checks pass.
 
 ## Workflow boundaries
 
 Use the exact uploaded PDF bytes or an actual permitted attachment descriptor. Ask for explicit existing-credit approval before a fresh takeoff. Preserve the documented idempotency key on an uncertain response; a retry is not approval for another job. Quantities and mappings need human review. Export only a reviewed, priced or final estimate as documented.
 
-Connection and installation do not themselves authorize paid work, purchases, communication to other people, or arbitrary changes to resources. Follow the user's actual request and the current server schema. Where an action needs confirmation, identify the exact resource and consequence before invoking it.
+Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 
-## Documentation and support
+Documentation: https://portravo.com/developers/mcp
 
-- [Official documentation](https://portravo.com/developers/mcp)
-- [Support](https://portravo.com/support)
-- [Privacy](https://portravo.com/privacy)
-- [Terms](https://portravo.com/terms)
-- [Existing Glama connector](https://glama.ai/mcp/connectors/com.portravo/construction-takeoff)
-
-## License
-
-The distribution metadata, configuration, documentation and skill instructions are licensed under MIT. This license does not license the hosted application implementation or replace the product's service terms.
+These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.

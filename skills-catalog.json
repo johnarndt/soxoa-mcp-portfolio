@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "skillCount": 29,
+  "products": [
+    {
+      "slug": "soxoa",
+      "name": "Soxoa",
+      "version": "1.2.1",
+      "description": "Discover recurring workflows, estimate illustrative automation value, and prepare a practical pilot and business case.",
+      "longDescription": "Choose a recurring workflow, estimate its illustrative capacity savings from your assumptions, and turn it into a practical pilot. Get a step-by-step workflow, a ready-to-use prompt, human review gates and acceptance checks using your current systems. Plans use supplied facts; tools do not connect your systems, deploy automation or measure actual savings.",
+      "endpoint": "https://soxoa.com/mcp",
+      "documentation": "https://soxoa.com/mcp-guide",
+      "authentication": "none",
+      "authDescription": "Public planning tools; no account authentication.",
+      "bounds": "Results are illustrative planning estimates. Preserve supplied assumptions, ask for required missing inputs, and distinguish an estimate from a guarantee.",
+      "defaultPrompts": [
+        "Help me identify a worthwhile recurring task to automate.",
+        "Turn this workflow into a pilot with acceptance checks.",
+        "Prepare a decision memo using these workload assumptions."
+      ],
+      "skills": [
+        {
+          "name": "soxoa-automation-planning",
+          "description": "Choose an automation pilot, estimate illustrative capacity savings, or turn a supplied workflow into a practical prompt and acceptance plan."
+        },
+        {
+          "name": "soxoa-process-discovery",
+          "description": "Interview the user about recurring manual work and turn confirmed workload facts into an automation intake before estimating value."
+        },
+        {
+          "name": "soxoa-automation-business-case",
+          "description": "Turn confirmed workflow assumptions and Soxoa calculations into a decision memo with illustrative capacity value and a bounded pilot proposal."
+        }
+      ]
+    },
+    {
+      "slug": "mentionedon",
+      "name": "MentionedOn",
+      "version": "1.2.1",
+      "description": "Review supplied discovery evidence and connected visibility reports, prepare website fixes, and organize actual AI-answer captures.",
+      "longDescription": "See how your business appears in saved AI answers and decide what to improve next. Connect MentionedOn to review your latest visibility report, competitors, source evidence and comparable changes over time. Prepare website schema and copy from facts you confirm, then check whether reviewed fixes are installed. New accounts get a clear setup step. Public tools also help review evidence you supply. No website is published and no paid AI scan is started from chat.",
+      "endpoint": "https://mentioned-on.com/mcp",
+      "documentation": "https://mentioned-on.com/developers/mcp",
+      "authentication": "public_evidence_plus_oauth2.1_pkce",
+      "authDescription": "Supplied-evidence tools are public. Connected workspace tools require normal OAuth 2.1 / PKCE consent.",
+      "bounds": "Public evidence is supplied and dated. Connected reports are saved history, not a new model scan. Website tools save reviewed revisions for owned businesses; they do not publish a website. Respect current monitoring entitlements.",
+      "defaultPrompts": [
+        "Review my latest saved visibility report and show its capture dates.",
+        "Prepare website fixes from my confirmed business facts.",
+        "Help me capture and compare actual AI answers consistently."
+      ],
+      "skills": [
+        {
+          "name": "mentionedon-discovery-evidence",
+          "description": "Use when a user wants to assess supplied AI-discovery signals, prioritize visibility gaps, or summarize dated model-capture evidence."
+        },
+        {
+          "name": "mentionedon-visibility-review",
+          "description": "Review a connected MentionedOn business’s saved AI visibility, competitors and comparable changes, or identify the next action from its existing report."
+        },
+        {
+          "name": "mentionedon-website-fixes",
+          "description": "Inspect an owned business website, save schema and copy from confirmed facts, and verify that reviewed MentionedOn fixes were installed."
+        },
+        {
+          "name": "mentionedon-answer-capture",
+          "description": "Prepare a repeatable log and prompt set for actual AI-answer captures supplied by the user, preserving assistant surface, date and missing results."
+        }
+      ]
+    },
+    {
+      "slug": "regsentry",
+      "name": "RegSentry",
+      "version": "1.2.1",
+      "description": "Inspect authorized tracking and consent evidence, compare observations, and prepare remediation and evidence exports.",
+      "longDescription": "Inspect static tracking signals on an authorized public website, observe bounded browser behavior before consent and after supported reject-all or accept-all controls, compare dated observations, and export a plain-text evidence report. Incomplete phases stay unresolved. Results describe observed request attempts and supplied evidence, not legal compliance or proof that a fix is complete.",
+      "endpoint": "https://regsentry.com/mcp",
+      "documentation": "https://regsentry.com/mcp-guide",
+      "authentication": "none",
+      "authDescription": "Public tools; no account authentication. Site inspection still requires the user’s authorization.",
+      "bounds": "Inspect only sites the user is authorized to review. Static markup is evidence of signals, not proof that tracking ran or a legal compliance determination.",
+      "defaultPrompts": [
+        "Review tracking signals on this public site I am authorized to test.",
+        "Compare these before-and-after consent observations.",
+        "Prepare an evidence report and retest plan."
+      ],
+      "skills": [
+        {
+          "name": "regsentry-consent-evidence-review",
+          "description": "Inspect an authorized public website's tracking signals, compare observed consent phases, and prepare a practical evidence report and retest plan."
+        }
+      ]
+    },
+    {
+      "slug": "intakra",
+      "name": "Intakra",
+      "version": "1.2.2",
+      "description": "Review supplied buying evidence and owned account opportunities, and configure explicitly requested workspace changes.",
+      "longDescription": "Find accounts worth your attention and explain why. Connect your Intakra workspace to review owned accounts, recent changes, opportunities, contact evidence and a daily brief. Save an offering or add accounts when requested. Without connecting, review supplied buying-signal evidence and prepare a sourced why-now brief. Empty workspaces get a concrete setup step; no outreach is sent.",
+      "endpoint": "https://intakra.com/mcp",
+      "documentation": "https://intakra.com/mcp-guide",
+      "authentication": "public_evidence_plus_oauth2.1_pkce",
+      "authDescription": "Supplied-evidence tools are public. Connected workspace tools require normal OAuth 2.1 / PKCE consent.",
+      "bounds": "Use dated supplied or owned-workspace evidence; do not infer verified buying intent or contact prospects. Obtain authorization for the actual account additions, offering changes or suggestion requests. Saved lists and job status do not prove a fresh research result.",
+      "defaultPrompts": [
+        "Prioritize my owned accounts using their dated evidence.",
+        "Prepare a why-now review from these supplied facts.",
+        "Help me review account suggestions before I choose what to add."
+      ],
+      "skills": [
+        {
+          "name": "intakra-buying-signal-review",
+          "description": "Use when a user wants to score supplied account-fit and buying-signal evidence or prepare a review-only why-now brief."
+        },
+        {
+          "name": "intakra-account-opportunities",
+          "description": "Prioritize owned Intakra accounts, review dated buying signals and changes, find relevant contact evidence, or prepare a daily account brief."
+        },
+        {
+          "name": "intakra-workspace-setup",
+          "description": "Set an Intakra offering, add explicitly chosen company domains, or request and review account suggestions for the user’s workspace."
+        }
+      ]
+    },
+    {
+      "slug": "postedly",
+      "name": "Postedly",
+      "version": "1.3.1",
+      "description": "Prepare letters, certified mail, fax, postcards and handwritten cards with private browser approval; track orders and reuse saved correspondence.",
+      "longDescription": "Prepare a fax, letter, certified letter, postcard or handwritten card from Postedly’s live catalog. Reuse contacts and correspondence drafts you ask to save, review the exact document or message, recipient, options and total through a private browser link, then track an owned order or export its recorded delivery evidence. A person approves payment on Postedly before fulfillment. Quotes, drafts and uploads do not send or charge. Contacts last one year after saving; drafts last 30 days and referenced PDFs may expire sooner. Provider milestones are not independent proof of receipt.",
+      "endpoint": "https://postedly.com/mcp/send",
+      "documentation": "https://postedly.com/developers",
+      "authentication": "oauth2.1_pkce",
+      "authDescription": "OAuth 2.1 / PKCE for connected owner resources.",
+      "bounds": "Check postedly_services or the live catalog before quoting fax, letters, certified mail, postcards or handwritten cards; availability is determined by the current response. Check the product catalog for handwritten cards. Use the connected OAuth owner and the actual intended document: preserve provided PDF bytes unless changes were requested; finish and inspect every page of a newly requested letter before upload. Intentional forms and test documents remain valid when requested. Review every page of the final proof; card samples are not a rendered proof of the exact message. Uploading, quoting and opening private review do not approve, charge or send. Payment requires the user's explicit browser review. Report payment and fulfillment separately. The object beta uses a separate manual request and is not an automated document order.",
+      "defaultPrompts": [
+        "Prepare a quote and private review link for mailing this finished PDF.",
+        "Help me choose a handwritten card and review the exact message.",
+        "Check whether my existing order was paid, sent and delivered."
+      ],
+      "skills": [
+        {
+          "name": "postedly-saved-correspondence",
+          "description": "Save or reuse private Postedly contacts and correspondence drafts, find prior orders, or export recorded delivery evidence."
+        },
+        {
+          "name": "postedly-track-orders",
+          "description": "Check existing Postedly orders and explain recorded payment, fulfillment, and delivery evidence. Use for order status, a missing confirmation, or an uncertain send; do not create a replacement order or infer a receipt from a quote."
+        },
+        {
+          "name": "postedly-fax-document",
+          "description": "Fax the user’s actual finished PDF to one supported US number through Postedly, with final proof, quote and separate browser approval."
+        },
+        {
+          "name": "postedly-mail-letter",
+          "description": "Write and mail a finished letter or mail an existing PDF through Postedly, including supported US certified mail with tracking and browser review."
+        },
+        {
+          "name": "postedly-send-postcard",
+          "description": "Prepare two-sided postcard artwork from Postedly’s live template and obtain a quote and private browser approval for one US recipient."
+        },
+        {
+          "name": "postedly-handwritten-card",
+          "description": "Choose an available Postedly card and handwriting style, prepare the exact message and closing, and obtain private review and payment approval."
+        }
+      ]
+    },
+    {
+      "slug": "portravo",
+      "name": "Portravo",
+      "version": "1.1.1",
+      "description": "Prepare authorized construction takeoffs, review source gaps and quantities, and download reviewed estimates.",
+      "longDescription": "Turn an owned construction plan into a reviewable takeoff. Check active automated trades and the exact existing-credit cost before starting, attach the actual PDF to a project, and recover progress without rerunning the job. Review quantities, returned source links and unresolved scope before exporting a reviewed estimate. Direct file transfer accepts up to 10 MiB; use the owned project upload page for plans up to 50 MiB. Credit guards do not buy credits or authorize billed overage.",
+      "endpoint": "https://portravo.com/mcp",
+      "documentation": "https://portravo.com/developers/mcp",
+      "authentication": "oauth2.1_pkce",
+      "authDescription": "OAuth 2.1 / PKCE for connected owner resources.",
+      "bounds": "Use the exact uploaded PDF bytes or an actual permitted attachment descriptor. Ask for explicit existing-credit approval before a fresh takeoff. Preserve the documented idempotency key on an uncertain response; a retry is not approval for another job. Quantities and mappings need human review. Export only a reviewed, priced or final estimate as documented.",
+      "defaultPrompts": [
+        "Check what is required before starting a takeoff for these selected trades.",
+        "Review the source gaps and uncertain quantities in my existing takeoff.",
+        "Download the estimate only after its review and pricing checks pass."
+      ],
+      "skills": [
+        {
+          "name": "portravo-prepare-takeoff",
+          "description": "Check trade availability and existing-credit cost, create an owned Portravo project, attach the actual plan PDF, and start an explicitly approved takeoff."
+        },
+        {
+          "name": "portravo-review-estimate",
+          "description": "Recover an existing Portravo takeoff, inspect source-linked quantities and unresolved scope, and download a reviewed, priced estimate."
+        },
+        {
+          "name": "portravo-scope-questions",
+          "description": "Turn actual Portravo takeoff notes, unresolved lines and source gaps into an estimator checklist and draft clarification questions."
+        }
+      ]
+    },
+    {
+      "slug": "dokyumi",
+      "name": "Dokyumi",
+      "version": "1.1.1",
+      "description": "Prepare saved extraction schemas, preflight exact documents and processing charges, and review or export owned results.",
+      "longDescription": "Choose an active saved schema, check processing mode and limits, and extract an authorized document for source review. Subscription workspaces use existing credits; BYOK lifetime workspaces incur separate provider charges and require that authorization. Review fields, confidence and validation, recover an existing request, and export completed results. Customer entitlements, supported formats, storage limits and retention apply. No credit purchases or provider top-ups are initiated.",
+      "endpoint": "https://dokyumi.com/mcp",
+      "documentation": "https://dokyumi.com/docs/mcp",
+      "authentication": "oauth2.1_pkce",
+      "authDescription": "OAuth 2.1 / PKCE for connected owner resources.",
+      "bounds": "Preflight before processing. Distinguish existing subscription credits from separate BYOK provider charges and obtain the applicable authorization. Preserve exact source bytes, schema and request key, review uncertain fields, and respect storage and retention limits.",
+      "defaultPrompts": [
+        "Help me choose a saved schema for this document.",
+        "Check the processing mode, cost authorization and limits before extraction.",
+        "Review uncertain fields and export my existing extraction."
+      ],
+      "skills": [
+        {
+          "name": "dokyumi-schema-starters",
+          "description": "Choose a saved Dokyumi extraction schema or preview and save a document workflow starter with the user’s agreement."
+        },
+        {
+          "name": "dokyumi-extract-document",
+          "description": "Preflight an authorized document and saved Dokyumi schema, distinguish subscription credits from BYOK provider charges, and extract exact file bytes for source review."
+        },
+        {
+          "name": "dokyumi-review-export",
+          "description": "Find saved Dokyumi extractions and exceptions, review uncertain fields, and export selected existing results as CSV or Excel."
+        }
+      ]
+    },
+    {
+      "slug": "afterglow",
+      "name": "Afterglow",
+      "version": "1.0.4",
+      "description": "Turn connected separation checklists into practical next steps and save confirmed item progress.",
+      "longDescription": "Turn your Afterglow legal, money, home and coparenting checklists into manageable next steps. Read the tasks and progress available to your account, choose a practical plan, and save completion of the exact items you confirm. Planning suggestions are prepared in the conversation; this connection does not access coaching history, private stories, notes or health records.",
+      "endpoint": "https://afterglow-lime.vercel.app/mcp",
+      "documentation": "https://afterglow-lime.vercel.app/developers",
+      "authentication": "oauth2.1_pkce",
+      "authDescription": "OAuth 2.1 / PKCE for connected owner resources.",
+      "bounds": "Read the user's applicable legal, money, home or coparenting checklist and preserve its returned disclaimer, audience filter, onboarding and plan limits. Save only the exact item and todo, done or not-applicable state the user confirms. Repeating the same item and state preserves its completion timestamp. These practical breakup/separation checklists do not expose the user's story, coaching history or private check-ins.",
+      "defaultPrompts": [
+        "Help me choose manageable next steps from my connected checklist.",
+        "Show what is still open without changing it.",
+        "Save the exact checklist status I confirm."
+      ],
+      "skills": [
+        {
+          "name": "afterglow-practical-next-steps",
+          "description": "Turn a linked Afterglow checklist into manageable next steps, review saved progress, or update an exact confirmed item. Use for practical separation, moving, money and coparenting tasks."
+        }
+      ]
+    },
+    {
+      "slug": "dibatto",
+      "name": "Dibatto",
+      "version": "1.0.6",
+      "description": "Prepare sourced podcast rundowns and private episode drafts; review saved transcripts and production status.",
+      "longDescription": "Turn a saved, cited Dibatto rundown into a useful episode brief and private draft. Review your owned shows, saved transcripts and post-production status, or prepare a rundown when you authorize the required research. Continue recording and publishing in Dibatto.",
+      "endpoint": "https://dibatto.com/mcp",
+      "documentation": "https://dibatto.com/developers",
+      "authentication": "oauth2.1_pkce",
+      "authDescription": "OAuth 2.1 / PKCE for connected owner resources.",
+      "bounds": "Read owned shows, cached cited rundowns, saved episodes/transcripts and existing wrap states. Preparing a private episode is not recording or publication. New research/model work requires explicit authorization and current Studio entitlement. Recording, live co-hosting, media upload, wrap generation and publication remain app-only.",
+      "defaultPrompts": [
+        "Review my show rundown and prepare an episode brief.",
+        "Prepare a private episode draft from confirmed sources.",
+        "Summarize a saved transcript and check production status."
+      ],
+      "skills": [
+        {
+          "name": "dibatto-prepare-episode",
+          "description": "Turn an owned Dibatto show’s sourced rundown into an episode brief or private draft, and prepare new research only when authorized."
+        },
+        {
+          "name": "dibatto-review-transcript",
+          "description": "Find owned Dibatto episodes, summarize saved transcripts, or check recording and post-production status without starting new production."
+        }
+      ]
+    },
+    {
+      "slug": "ocolta",
+      "name": "Ocolta",
+      "version": "1.0.3",
+      "description": "Explain categorical document-review signals and prepare neutral human follow-up questions.",
+      "longDescription": "Understand the categorical signals, confidence and priorities in an existing Ocolta document review. Find recoverable reviews linked to your purchase and compare their available summaries. Start a new document review in Ocolta; this connection does not upload documents, purchase reviews, return raw document text, verify bank accounts or decide eligibility. Recovery remains subject to the product’s time window.",
+      "endpoint": "https://app.ocolta.com/mcp",
+      "documentation": "https://app.ocolta.com/workspace/integrations",
+      "authentication": "oauth2.1_pkce",
+      "authDescription": "OAuth 2.1 / PKCE for connected owner resources.",
+      "bounds": "Read only owner-scoped existing review summaries. Preserve categorical signals, confidence and counts without exposing original document text. These are review signals; do not turn them into legal, medical or psychological diagnoses or create a new document assessment through these tools.",
+      "defaultPrompts": [
+        "Explain the categorical signals in my existing review.",
+        "Recover my recent review using the connected purchase.",
+        "Draft neutral follow-up questions for a human reviewer."
+      ],
+      "skills": [
+        {
+          "name": "ocolta-review-document-signals",
+          "description": "Explain categorical signals from an existing purchased Ocolta document review, compare accessible summaries, or recover a recent result without exposing document text."
+        },
+        {
+          "name": "ocolta-verification-follow-up",
+          "description": "Prepare neutral human follow-up questions from an Ocolta categorical result or user-described concern, without deciding authenticity or eligibility."
+        }
+      ]
+    },
+    {
+      "slug": "casacaddy",
+      "name": "CasaCaddy",
+      "version": "1.0.5",
+      "description": "Use a paired installation to prepare bounded home-maintenance guides and recover saved requests.",
+      "longDescription": "Get practical maintenance guidance for an appliance or home item you describe, and recover your saved guide without starting another request. Pair CasaCaddy 1.0.1 or later through Settings → Connected tools → Assistant pairing. Eligible product access and confirmation of existing allowance are required for a new guide. Guidance preserves safety cautions; the connection does not read your phone’s home library, photos or schedule.",
+      "endpoint": "https://api.casacaddy.com/mcp",
+      "documentation": "https://api.casacaddy.com/developers",
+      "authentication": "oauth2.1_pkce",
+      "authDescription": "Use native CasaCaddy Assistant pairing and the normal OAuth connection for the eligible installation.",
+      "bounds": "Read the maintenance requirements and account/device-owned guide job. Ask for confirmation before preparing a guide, preserve the request key on a retry, and report its actual queued, processing, failed or completed state. Guide preparation is not evidence the maintenance work was performed.",
+      "defaultPrompts": [
+        "Show the maintenance guidance available to my paired installation.",
+        "Help me prepare a bounded guide for this appliance.",
+        "Recover the saved guide request I already started."
+      ],
+      "skills": [
+        {
+          "name": "casacaddy-plan-home-maintenance",
+          "description": "Get bounded maintenance guidance for user-described appliances through a paired CasaCaddy installation, recover a saved guide, or choose a safe next task."
+        }
+      ]
+    }
+  ],
+  "operations": {
+    "name": "Soxoa Ops",
+    "version": "0.2.0",
+    "skillCount": 15,
+    "path": "operations/soxoa-ops",
+    "skills": [
+      {
+        "name": "soxoa-ops-ad-path-check",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-ad-path-check/SKILL.md",
+        "description": "Prepare evidence-based ad concepts and audit their landing, signup and test-checkout paths before a proposed campaign."
+      },
+      {
+        "name": "soxoa-ops-audit-site-discoverability",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-audit-site-discoverability/SKILL.md",
+        "description": "Audit an authorized website’s page inventory and internal links for disconnected content and crawl barriers."
+      },
+      {
+        "name": "soxoa-ops-build-editorial-pitch-pack",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-build-editorial-pitch-pack/SKILL.md",
+        "description": "Prepare sourced articles and outlet-specific editorial pitches with current submission rules and exclusivity tracking."
+      },
+      {
+        "name": "soxoa-ops-build-marketing-kit",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-build-marketing-kit/SKILL.md",
+        "description": "Build coordinated marketing assets from dated product facts, brand assets and approved evidence."
+      },
+      {
+        "name": "soxoa-ops-build-voice-guide",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-build-voice-guide/SKILL.md",
+        "description": "Build a reusable writing voice guide from authorized samples with channel-specific rules and provenance."
+      },
+      {
+        "name": "soxoa-ops-chief-of-staff-brief",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-chief-of-staff-brief/SKILL.md",
+        "description": "Summarize a stated work period from authorized activity records, distinguishing changed, verified and released work."
+      },
+      {
+        "name": "soxoa-ops-claim-audit",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-claim-audit/SKILL.md",
+        "description": "Review supplied or authorized marketing copy for clear positioning, unsupported claims and evidence-based replacements."
+      },
+      {
+        "name": "soxoa-ops-evaluate-ai-output",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-evaluate-ai-output/SKILL.md",
+        "description": "Review an existing AI result against source evidence and prospective acceptance criteria, preserving errors and unresolved scope."
+      },
+      {
+        "name": "soxoa-ops-feedback-inbox",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-feedback-inbox/SKILL.md",
+        "description": "Capture user-supplied customer feedback verbatim, group it into issues and rank distinct requesters without choosing what gets built."
+      },
+      {
+        "name": "soxoa-ops-owner-actions",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-owner-actions/SKILL.md",
+        "description": "Prepare a requested action handoff separating verified results, remaining authorized agent work and decisions needing a person."
+      },
+      {
+        "name": "soxoa-ops-research-prospect-brief",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-research-prospect-brief/SKILL.md",
+        "description": "Prepare a sourced business prospect brief with alternative explanations, rejection rules and an unsent draft when requested."
+      },
+      {
+        "name": "soxoa-ops-scope-automation-opportunity",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-scope-automation-opportunity/SKILL.md",
+        "description": "Scope a recurring workflow into automate, assist, discovery or stop with review gates and illustrative economics."
+      },
+      {
+        "name": "soxoa-ops-screenshot-moment",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-screenshot-moment/SKILL.md",
+        "description": "Review an authorized product flow to identify a truthful result customers might share and rank practical sharing improvements."
+      },
+      {
+        "name": "soxoa-ops-signup-pulse",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-signup-pulse/SKILL.md",
+        "description": "Review signup progress or implement requested owner alerts and digests using authorized product data and reliable delivery recovery."
+      },
+      {
+        "name": "soxoa-ops-write-evidence-article",
+        "path": "operations/soxoa-ops/skills/soxoa-ops-write-evidence-article/SKILL.md",
+        "description": "Write and revise a practical article from retained evidence with separate factual and style review."
+      }
+    ]
+  },
+  "totalSkillCount": 44
+}

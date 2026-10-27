@@ -1,8 +1,8 @@
 {
   "id": "regsentry",
   "name": "regsentry",
-  "version": "1.1.3",
-  "description": "Inspect authorized static tracking signals and review supplied consent evidence.",
+  "version": "1.2.1",
+  "description": "Inspect authorized tracking and consent evidence, compare observations, and prepare remediation and evidence exports.",
   "author": {
     "name": "Soxoa LLC",
     "email": "hello@soxoa.com",
