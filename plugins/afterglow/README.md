@@ -4,7 +4,9 @@ Turn connected separation checklists into practical next steps and save confirme
 
 ## Connection
 
-Endpoint: https://afterglow-lime.vercel.app/mcp
+Website: https://withafterglow.com
+
+Endpoint: https://api.withafterglow.com/mcp
 
 Transport: Streamable HTTP (client config type `http`).
 
@@ -28,6 +30,8 @@ Read the user's applicable legal, money, home or coparenting checklist and prese
 
 Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 
-Documentation: https://afterglow-lime.vercel.app/developers
+Documentation: https://api.withafterglow.com/developers
 
 These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.
+
+The public website and API use separate hosts. OAuth discovery, authorization and the protected MCP resource use `https://api.withafterglow.com`; a legacy-host connection needs fresh authorization for the API resource. The API documentation page may still show the older hostname; the current connection URL above is verified.

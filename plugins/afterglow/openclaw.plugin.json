@@ -2,7 +2,7 @@
   "id": "afterglow",
   "name": "Afterglow",
   "description": "Turn connected separation checklists into practical next steps and save confirmed item progress.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "configSchema": {
     "type": "object",
     "additionalProperties": false,
@@ -13,7 +13,7 @@
   ],
   "mcpServers": {
     "afterglow": {
-      "url": "https://afterglow-lime.vercel.app/mcp",
+      "url": "https://api.withafterglow.com/mcp",
       "transport": "streamable-http",
       "auth": "oauth"
     }

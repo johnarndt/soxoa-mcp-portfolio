@@ -11,7 +11,7 @@ Public first-party connection configurations and workflow skills for eleven Soxo
 | [Postedly](plugins/postedly/README.md) | `https://postedly.com/mcp/send` | OAuth 2.1 / PKCE |
 | [Portravo](plugins/portravo/README.md) | `https://portravo.com/mcp` | OAuth 2.1 / PKCE |
 | [Dokyumi](plugins/dokyumi/README.md) | `https://dokyumi.com/mcp` | OAuth 2.1 / PKCE |
-| [Afterglow](plugins/afterglow/README.md) | `https://afterglow-lime.vercel.app/mcp` | OAuth 2.1 / PKCE |
+| [Afterglow](plugins/afterglow/README.md) | `https://api.withafterglow.com/mcp` | OAuth 2.1 / PKCE |
 | [Dibatto](plugins/dibatto/README.md) | `https://dibatto.com/mcp` | OAuth 2.1 / PKCE |
 | [Ocolta](plugins/ocolta/README.md) | `https://app.ocolta.com/mcp` | OAuth 2.1 / PKCE |
 | [CasaCaddy](plugins/casacaddy/README.md) | `https://api.casacaddy.com/mcp` | OAuth 2.1 / PKCE |

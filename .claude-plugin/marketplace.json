@@ -54,7 +54,7 @@
       "name": "afterglow",
       "source": "./plugins/afterglow",
       "description": "Turn connected separation checklists into practical next steps and save confirmed item progress.",
-      "version": "1.0.4"
+      "version": "1.0.5"
     },
     {
       "name": "dibatto",

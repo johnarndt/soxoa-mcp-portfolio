@@ -2,7 +2,7 @@
   "mcpServers": {
     "afterglow": {
       "type": "http",
-      "url": "https://afterglow-lime.vercel.app/mcp"
+      "url": "https://api.withafterglow.com/mcp"
     }
   }
 }
