@@ -1,6 +1,6 @@
 # Postedly MCP integration
 
-Prepare letters, certified mail, fax, postcards and handwritten cards with private browser approval; track orders and reuse saved correspondence.
+Prepare correspondence and owner-funded paper checks with private browser approval; track orders and reuse saved correspondence.
 
 ## Connection
 
@@ -20,16 +20,17 @@ Use the client's normal remote-MCP authorization flow. Credentials stay in the c
 - [postedly-mail-letter](skills/postedly-mail-letter/SKILL.md): Write and mail a finished letter or mail an existing PDF through Postedly, including supported US certified mail with tracking and browser review.
 - [postedly-send-postcard](skills/postedly-send-postcard/SKILL.md): Prepare two-sided postcard artwork from Postedly’s live template and obtain a quote and private browser approval for one US recipient.
 - [postedly-handwritten-card](skills/postedly-handwritten-card/SKILL.md): Choose an available Postedly card and handwriting style, prepare the exact message and closing, and obtain private review and payment approval.
+- [postedly-mail-check](skills/postedly-mail-check/SKILL.md): Prepare a mailed paper check from the user’s own ready US checking account through Postedly, with a service-fee quote and private owner proof, signature and payment approval.
 
 ## Example requests
 
 - Prepare a quote and private review link for mailing this finished PDF.
-- Help me choose a handwritten card and review the exact message.
+- Help me connect my own checking account and prepare a check for private review. Do not sign, pay or mail it.
 - Check whether my existing order was paid, sent and delivered.
 
 ## Workflow boundaries
 
-Check postedly_services or the live catalog before quoting fax, letters, certified mail, postcards or handwritten cards; availability is determined by the current response. Check the product catalog for handwritten cards. Use the connected OAuth owner and the actual intended document: preserve provided PDF bytes unless changes were requested; finish and inspect every page of a newly requested letter before upload. Intentional forms and test documents remain valid when requested. Review every page of the final proof; card samples are not a rendered proof of the exact message. Uploading, quoting and opening private review do not approve, charge or send. Payment requires the user's explicit browser review. Report payment and fulfillment separately. The object beta uses a separate manual request and is not an automated document order.
+Check postedly_services or the live catalog before quoting fax, letters, certified mail, postcards, handwritten cards or checks; availability is determined by the current response. Check the product catalog for handwritten cards. Use the connected OAuth owner and the actual intended document: preserve provided PDF bytes unless changes were requested; finish and inspect every page of a newly requested letter before upload. Intentional forms and test documents remain valid when requested. Review every page of the final proof; card samples are not a rendered proof of the exact message. Uploading, quoting and opening private review do not approve, charge or send. Payment requires the user's explicit browser review. Report payment and fulfillment separately. The object beta uses a separate manual request and is not an automated document order. For checks, use only masked ready bank references with postedly_bank_accounts and postedly_check_draft; owner bank connection, verification, passkeys, signatures and full-proof approval stay in the secure browser. Never collect bank numbers, credentials or signatures in chat or CLI input. Check face value is separate from the service fee and tax; Postedly does not track clearing. The dedicated synthetic reviewer stops before real bank enrollment, signing, payment or fulfillment.
 
 Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 

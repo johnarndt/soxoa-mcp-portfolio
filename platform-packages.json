@@ -33,6 +33,13 @@
         }
       },
       "releaseNotes": "1.0.6: Canonical Afterglow API connection in a new OpenAI entry because the earlier entry cannot change MCP server configuration. Website, policy URLs and workflow skill content retain the verified canonical-domain 1.0.5 behavior."
+    },
+    "postedly": {
+      "pluginName": "postedly-correspondence",
+      "version": "1.4.0",
+      "displayName": "Postedly",
+      "serverKey": "postedly",
+      "releaseNotes": "1.4.0 adds live paper-check discovery and a dedicated check-preparation skill while retaining correspondence preparation, order tracking, the existing OAuth DCR endpoint and human approval boundaries. The account owner connects and verifies their own checking account, reviews the complete proof, signs and pays the service fee in the secure browser; bank credentials, passkeys and signatures never belong in chat or CLI input. Check face value is separate from the fee, and provider printing/mailing is not clearing. Existing synthetic reviewer access remains payment/fulfillment-disabled and stops before real bank enrollment. The retained earlier demonstration recording does not demonstrate checks or a live customer payment-to-delivery journey. This source package and ZIP are prepared; platform acceptance and publication require their own observed results."
     }
   }
 }

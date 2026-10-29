@@ -1,6 +1,6 @@
 # Product workflow skills
 
-44 prepared skills: 29 customer skills cover eleven products, and 15 operations skills form a separate skills-only package. Each skill requires only the capabilities it describes; installing instructions does not connect a product or authorize a paid task.
+45 prepared skills: 30 customer skills cover eleven products, and 15 operations skills form a separate skills-only package. Each skill requires only the capabilities it describes; installing instructions does not connect a product or authorize a paid task.
 
 | Product | Skills | Account access |
 | --- | ---: | --- |
@@ -8,7 +8,7 @@
 | [MentionedOn](plugins/mentionedon/README.md) | 4 | Supplied-evidence tools are public. Connected workspace tools require normal OAuth 2.1 / PKCE consent. |
 | [RegSentry](plugins/regsentry/README.md) | 1 | Public tools; no account authentication. Site inspection still requires the user’s authorization. |
 | [Intakra](plugins/intakra/README.md) | 3 | Supplied-evidence tools are public. Connected workspace tools require normal OAuth 2.1 / PKCE consent. |
-| [Postedly](plugins/postedly/README.md) | 6 | OAuth 2.1 / PKCE for connected owner resources. |
+| [Postedly](plugins/postedly/README.md) | 7 | OAuth 2.1 / PKCE for connected owner resources. |
 | [Portravo](plugins/portravo/README.md) | 3 | OAuth 2.1 / PKCE for connected owner resources. |
 | [Dokyumi](plugins/dokyumi/README.md) | 3 | OAuth 2.1 / PKCE for connected owner resources. |
 | [Afterglow](plugins/afterglow/README.md) · [Website](https://withafterglow.com) | 1 | OAuth 2.1 / PKCE for connected owner resources. |
@@ -47,6 +47,8 @@
 - [postedly-mail-letter](skills/postedly-mail-letter/SKILL.md): Write and mail a finished letter or mail an existing PDF through Postedly, including supported US certified mail with tracking and browser review.
 - [postedly-send-postcard](skills/postedly-send-postcard/SKILL.md): Prepare two-sided postcard artwork from Postedly’s live template and obtain a quote and private browser approval for one US recipient.
 - [postedly-handwritten-card](skills/postedly-handwritten-card/SKILL.md): Choose an available Postedly card and handwriting style, prepare the exact message and closing, and obtain private review and payment approval.
+
+- [postedly-mail-check](skills/postedly-mail-check/SKILL.md): Prepare a mailed paper check from the user’s own ready US checking account through Postedly, with a service-fee quote and private owner proof, signature and payment approval.
 
 ## Portravo
 

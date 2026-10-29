@@ -20,9 +20,11 @@ All endpoints use Streamable HTTP. Compatible clients normally call that transpo
 
 These files include no hosted application source, private accounts, credentials, payment keys, internal reviewer cases, recordings, or test fixtures. Installation does not authorize arbitrary writes, paid processing or purchases. Server capabilities and plan entitlements remain authoritative.
 
-The local marketplace index is `.claude-plugin/marketplace.json`; individual plugin folders are under `plugins/`. The [complete skill list](SKILLS.md) contains 29 customer outcome skills across all eleven products and a separate 15-skill Soxoa Ops package. Directory review and search discovery depend on their maintainers and do not guarantee recommendations.
+The local marketplace index is `.claude-plugin/marketplace.json`; individual plugin folders are under `plugins/`. The [complete skill list](SKILLS.md) contains 30 customer outcome skills across all eleven products and a separate 15-skill Soxoa Ops package. Directory review and search discovery depend on their maintainers and do not guarantee recommendations.
 
 ## Distribution status
+
+Postedly 1.4.0 source adds the paper-check preparation workflow and preserves all six earlier skills. Its current ZIPs are prepared locally; upload, review and publication states require their own release or portal receipts. Bank connection, passkeys, signature and fee payment stay in the owner’s browser, and Postedly does not track check clearing.
 
 The source and [versioned ZIP packages](https://github.com/johnarndt/soxoa-mcp-portfolio/releases/tag/agent-skills-2026-10-27) are public. OpenAI review, blocked drafts and curated catalog proposals have separate states; see the [dated distribution status](DISTRIBUTION_STATUS.md) before treating a package as approved.
 
