@@ -15,6 +15,7 @@ When requested, `postedly_delivery_report` returns private plain-text content an
 
 - A quote, uploaded document, or private review link is preparation, not an order or payment.
 - Payment authorization or successful payment does not establish provider acceptance, dispatch, or delivery.
+- For checks, separate fee payment from face value. Printing, mailing and delivery do not establish deposit or clearing; Postedly does not track clearing.
 - Submitted, queued, processing, and unknown states do not prove delivery. Say sent or delivered only when the returned record supports that claim.
 - Fax delivery concerns transmission to the receiving machine, not whether a person read it. Postal milestones reflect the provider evidence returned; do not infer a signature or return receipt.
 
