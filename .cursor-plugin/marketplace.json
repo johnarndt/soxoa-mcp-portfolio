@@ -1,0 +1,79 @@
+{
+  "name": "soxoa-mcp-portfolio",
+  "owner": {
+    "name": "Soxoa LLC",
+    "email": "john@soxoa.com"
+  },
+  "metadata": {
+    "description": "First-party product MCP connections and focused workflow skills.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "soxoa",
+      "source": "plugins/soxoa",
+      "description": "Discover recurring workflows, estimate illustrative automation value, and prepare a practical pilot and business case.",
+      "version": "1.2.1"
+    },
+    {
+      "name": "mentionedon",
+      "source": "plugins/mentionedon",
+      "description": "Review supplied discovery evidence and connected visibility reports, prepare website fixes, and organize actual AI-answer captures.",
+      "version": "1.2.1"
+    },
+    {
+      "name": "regsentry",
+      "source": "plugins/regsentry",
+      "description": "Inspect authorized tracking and consent evidence, compare observations, and prepare remediation and evidence exports.",
+      "version": "1.2.1"
+    },
+    {
+      "name": "intakra",
+      "source": "plugins/intakra",
+      "description": "Review supplied buying evidence and owned account opportunities, and configure explicitly requested workspace changes.",
+      "version": "1.2.2"
+    },
+    {
+      "name": "postedly",
+      "source": "plugins/postedly",
+      "description": "Prepare correspondence and owner-funded paper checks with private browser approval; track orders and reuse saved correspondence.",
+      "version": "1.4.0"
+    },
+    {
+      "name": "portravo",
+      "source": "plugins/portravo",
+      "description": "Prepare authorized construction takeoffs, review source gaps and quantities, and download reviewed estimates.",
+      "version": "1.1.1"
+    },
+    {
+      "name": "dokyumi",
+      "source": "plugins/dokyumi",
+      "description": "Prepare saved extraction schemas, preflight exact documents and processing charges, and review or export owned results.",
+      "version": "1.1.1"
+    },
+    {
+      "name": "afterglow",
+      "source": "plugins/afterglow",
+      "description": "Turn connected separation checklists into practical next steps and save confirmed item progress.",
+      "version": "1.0.5"
+    },
+    {
+      "name": "dibatto",
+      "source": "plugins/dibatto",
+      "description": "Prepare sourced podcast rundowns and private episode drafts; review saved transcripts and production status.",
+      "version": "1.0.6"
+    },
+    {
+      "name": "ocolta",
+      "source": "plugins/ocolta",
+      "description": "Explain categorical document-review signals and prepare neutral human follow-up questions.",
+      "version": "1.0.3"
+    },
+    {
+      "name": "casacaddy",
+      "source": "plugins/casacaddy",
+      "description": "Use a paired installation to prepare bounded home-maintenance guides and recover saved requests.",
+      "version": "1.0.5"
+    }
+  ]
+}

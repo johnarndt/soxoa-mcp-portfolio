@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.portravo/construction-takeoff",
+  "description": "Preflight approved takeoffs with existing credits; review source gaps and export reviewed estimates.",
+  "title": "Portravo Construction Takeoff",
+  "version": "1.1.0",
+  "websiteUrl": "https://portravo.com/developers/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://portravo.com/mcp"
+    }
+  ]
+}

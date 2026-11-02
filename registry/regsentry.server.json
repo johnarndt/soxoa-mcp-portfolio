@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.regsentry/tracking-inspector",
+  "description": "Inspect authorized website tracking, compare consent observations, and get remediation guidance.",
+  "title": "RegSentry Website Tracking Inspector",
+  "version": "2.0.0",
+  "websiteUrl": "https://regsentry.com/agents",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://regsentry.com/mcp"
+    }
+  ]
+}
