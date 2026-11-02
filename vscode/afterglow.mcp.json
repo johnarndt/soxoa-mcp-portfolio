@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "afterglow": {
+      "type": "http",
+      "url": "https://api.withafterglow.com/mcp"
+    }
+  }
+}

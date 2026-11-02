@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "mentionedon": {
+      "type": "http",
+      "url": "https://mentioned-on.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "dibatto": {
+      "type": "http",
+      "url": "https://dibatto.com/mcp"
+    }
+  }
+}
