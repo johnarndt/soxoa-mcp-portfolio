@@ -56,13 +56,15 @@ The initial proposed app is Postedly in Communications, for Search and Gemini, u
 
 This repository includes a Cursor marketplace manifest and eleven per-product Cursor manifests, MCP configurations, existing workflow skills and committed icons. Cursor's official template validator passes. This establishes package structure, not fresh native account authorization or paid fulfillment.
 
-The Soxoa publisher application is prepared using this public repository. Final submission accepts the Publisher Terms and requires the owner's action-time approval. No marketplace approval or listing is claimed until the receipt and review outcome are verified. Earlier user-reported submission remains unverified; the current signed-in flow shows a new publisher application.
+The Soxoa publisher application was submitted November 2 after the owner approved the Marketplace Publisher Terms. Cursor displayed ‘Thanks for applying’ and confirmed receipt of the submission. The submitted public repository contains all eleven product plugins. Marketplace review and publication remain pending; no listing approval is claimed.
 
 ## Microsoft, AWS and Salesforce
 
 The owner reports Microsoft/Copilot listing approval is pending. This task leaves that process unchanged.
 
-AWS and Salesforce are separate channels under preparation, with no submission or listing claimed here. AWS needs access to the existing seller account and confirmation of the supported authentication/fulfillment path. Salesforce requires Partner Community access and an applicable partner/commercial path. Do not assume an AgentExchange connector listing is free or agree to fees without owner approval.
+AWS onboarding remains in progress. Partner/seller enrollment and product listings are not yet established; no paid partner tier was selected. Console-specific account details and onboarding evidence are retained privately.
+
+Salesforce created the free business username for Soxoa LLC after the owner approved its Main Services Agreement. Activation and owner password setup remain pending; the confirmation page allows up to 30 minutes for the activation email. Partner Community enrollment and AgentExchange listing have not been completed. Applicable commercial agreements, any fees and the supported MCP authentication/fulfillment paths remain separate gates. Do not assume an AgentExchange connector listing is free or agree to fees without owner approval.
 
 ## Other existing distribution
 
