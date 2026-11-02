@@ -57,6 +57,12 @@ gemini extensions install https://github.com/johnarndt/postedly-gemini-extension
 
 Native package validation passed; authenticated task completion and gallery indexing are tracked separately.
 
+## Cursor
+
+The root `.cursor-plugin/marketplace.json` lists eleven customer product plugins. Each product includes a Cursor manifest, `mcp.json`, the same scoped workflow skills, and its brand icon. Cursor's official template validator passes; publisher review, native OAuth acceptance and actual task completion remain separate checks. See [distribution status](DISTRIBUTION_STATUS.md) for the application state.
+
+For a manual connection before marketplace approval, use the product's `mcp.json` in Cursor's MCP settings. This connects the server; it does not install bundled skills. Avoid duplicate connections when installing a plugin that supplies the same server. Paid processing, purchases and external communications still require the user's actual authorization.
+
 ## Build packages
 
 ```sh

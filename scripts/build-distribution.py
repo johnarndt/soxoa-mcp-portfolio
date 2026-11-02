@@ -39,6 +39,8 @@ def main():
         parser.error("--only must name existing product slugs")
     marketplace_path = ROOT / ".claude-plugin/marketplace.json"
     marketplace = json.loads(marketplace_path.read_text())
+    cursor_marketplace_path = ROOT / '.cursor-plugin/marketplace.json'
+    cursor_marketplace = json.loads(cursor_marketplace_path.read_text()) if cursor_marketplace_path.exists() else None
     receipts = []
     for product in catalog["products"]:
         slug = product["slug"]
@@ -64,6 +66,16 @@ def main():
         for row in marketplace["plugins"]:
             if row["name"] == slug:
                 row.update(version=version, description=product["description"])
+        cursor_manifest_path = plugin / '.cursor-plugin/plugin.json'
+        if cursor_manifest_path.exists():
+            cursor_manifest = json.loads(cursor_manifest_path.read_text())
+            cursor_manifest.update(version=version, description=product['description'])
+            write_json(cursor_manifest_path, cursor_manifest)
+            write_json(plugin / 'mcp.json', json.loads((plugin / '.mcp.json').read_text()))
+        if cursor_marketplace is not None:
+            for row in cursor_marketplace['plugins']:
+                if row['name'] == slug:
+                    row.update(version=version, description=product['description'])
         for row in products["products"]:
             if row["slug"] == slug:
                 row.update(description=product["description"], authentication=product["authentication"],
@@ -81,6 +93,9 @@ def main():
                   "Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.", "",
                   f"Documentation: {product['documentation']}", "",
                   "These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.", ""]
+        if slug == 'afterglow':
+            lines[6:6] = ['Website: https://withafterglow.com', '']
+            lines += ["The public website and API use separate hosts. OAuth discovery, authorization and the protected MCP resource use `https://api.withafterglow.com`; a legacy-host connection needs fresh authorization for the API resource. The API documentation page may still show the older hostname; the current connection URL above is verified.", '']
         (plugin / "README.md").write_text("\n".join(lines))
         archive = args.output / "public" / f"{slug}-{version}.zip"
         zip_tree(plugin, archive)
@@ -117,6 +132,8 @@ def main():
                            openaiSha256=hashlib.sha256(portal_archive.read_bytes()).hexdigest())
         receipts.append(receipt)
     write_json(marketplace_path, marketplace)
+    if cursor_marketplace is not None:
+        write_json(cursor_marketplace_path, cursor_marketplace)
     write_json(ROOT / "products.json", products)
     write_json(args.output / "build-receipt.json", {"skills": sum(r["skills"] for r in receipts), "products": receipts,
                "status": "built_not_submitted", "networkRequests": 0})

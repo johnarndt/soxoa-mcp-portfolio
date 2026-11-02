@@ -1,0 +1,19 @@
+{
+  "name": "ocolta",
+  "version": "1.0.3",
+  "description": "Explain categorical document-review signals and prepare neutral human follow-up questions.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "john@soxoa.com"
+  },
+  "homepage": "https://ocolta.com",
+  "repository": "https://github.com/johnarndt/soxoa-mcp-portfolio",
+  "license": "MIT",
+  "logo": "assets/icon.png",
+  "skills": "skills/",
+  "mcpServers": "mcp.json",
+  "keywords": [
+    "ocolta",
+    "mcp"
+  ]
+}

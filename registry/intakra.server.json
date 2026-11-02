@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.intakra/buying-signal-review",
+  "description": "Review supplied buying evidence or OAuth-linked accounts, opportunities and workspace settings.",
+  "title": "Intakra Buying Signals and Workspace",
+  "version": "3.1.0",
+  "websiteUrl": "https://intakra.com/mcp-guide",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://intakra.com/mcp"
+    }
+  ]
+}

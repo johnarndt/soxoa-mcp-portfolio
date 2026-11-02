@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dokyumi": {
+      "type": "http",
+      "url": "https://dokyumi.com/mcp"
+    }
+  }
+}

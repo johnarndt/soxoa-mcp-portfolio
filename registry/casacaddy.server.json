@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.soxoa/casacaddy-maintenance",
+  "description": "Read guide requirements, prepare confirmed maintenance guides and check your device-owned jobs.",
+  "title": "CasaCaddy Maintenance",
+  "version": "1.0.0",
+  "websiteUrl": "https://api.casacaddy.com/developers",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.casacaddy.com/mcp"
+    }
+  ]
+}
