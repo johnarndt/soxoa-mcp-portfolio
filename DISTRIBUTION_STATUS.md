@@ -46,6 +46,12 @@ All eleven active products have active entries. The registry folder preserves cu
 
 Registry ingestion does not establish listing, ranking or recommendation in every downstream directory; verify those separately.
 
+## GitHub curated MCP Registry and VS Code/Copilot
+
+On November 2, all eleven exact names returned active, latest records from the official MCP Registry and no entries from GitHub's curated API. A [consolidated onboarding request](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19361348) was submitted for all eleven, including exact versions, endpoints, authentication requirements, purpose, public distribution repository, licensing limits and reproducible registry queries. Curation and feed inclusion remain pending.
+
+[VS Code install links and individual connection files](vscode/README.md) are available now. All eleven links were checked against the official redirect service: each resolves to the intended server name, HTTP transport and endpoint. This verifies configuration and link delivery, not native OAuth completion or authenticated tool execution in VS Code. No tool approvals or credentials are embedded. GitHub-feed discovery in VS Code and Copilot remains subject to curation, preview availability and organization policy; Microsoft 365 Copilot Agent Store review is a separate process.
+
 ## Google Connected Apps
 
 Soxoa's verified Play developer account submitted its preview application November 2. Play Console confirms the account has applied and will be notified if selected. This is a preview access/waitlist application, not a listing approval.

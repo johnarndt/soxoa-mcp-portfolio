@@ -63,6 +63,10 @@ The root `.cursor-plugin/marketplace.json` lists eleven customer product plugins
 
 For a manual connection before marketplace approval, use the product's `mcp.json` in Cursor's MCP settings. This connects the server; it does not install bundled skills. Avoid duplicate connections when installing a plugin that supplies the same server. Paid processing, purchases and external communications still require the user's actual authorization.
 
+## VS Code and GitHub Copilot
+
+[Install links and per-product VS Code configurations](vscode/README.md) cover all eleven hosted MCPs. They open the normal review and authentication flow without embedded credentials or automatic tool approval. GitHub curated-registry onboarding is requested separately; direct installation does not establish gallery inclusion or authenticated customer acceptance.
+
 ## Build packages
 
 ```sh

@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "postedly": {
+      "type": "http",
+      "url": "https://postedly.com/mcp/send"
+    }
+  }
+}

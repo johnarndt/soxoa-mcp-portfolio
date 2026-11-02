@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "portravo": {
+      "type": "http",
+      "url": "https://portravo.com/mcp"
+    }
+  }
+}
