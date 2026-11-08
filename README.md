@@ -30,6 +30,8 @@ The source and [versioned ZIP packages](https://github.com/johnarndt/soxoa-mcp-p
 
 ## Install with the skills CLI
 
+Browse the [skills.sh directory pages](https://skills.sh/johnarndt/soxoa-mcp-portfolio) for these workflows, their installation commands and directory audit results.
+
 Install the workflows for a product from this public repository with the [Vercel skills CLI](https://skills.sh/docs/cli). Each command installs only the named skills into your current project; add `--global --agent codex` for a user-level Codex installation, or select another supported agent.
 
 ```sh
