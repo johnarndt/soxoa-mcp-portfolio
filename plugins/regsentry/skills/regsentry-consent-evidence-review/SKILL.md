@@ -3,7 +3,7 @@ name: regsentry-consent-evidence-review
 description: "Inspect an authorized public website's tracking signals, compare observed consent phases, and prepare a practical evidence report and retest plan."
 ---
 
-Use the connected RegSentry tools at https://regsentry.com/mcp. If unavailable, use https://regsentry.com/mcp-guide for connection guidance. The service is public and needs no account.
+Use the connected RegSentry tools at https://regsentry.com/mcp. If unavailable, use https://regsentry.com/mcp-guide for connection guidance. The six public tools used by this workflow need no account.
 
 
 

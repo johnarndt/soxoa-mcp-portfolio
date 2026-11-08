@@ -28,6 +28,31 @@ Postedly 1.4.0 source adds the paper-check preparation workflow and preserves al
 
 The source and [versioned ZIP packages](https://github.com/johnarndt/soxoa-mcp-portfolio/releases/tag/agent-skills-2026-10-27) are public. OpenAI review, blocked drafts and curated catalog proposals have separate states; see the [dated distribution status](DISTRIBUTION_STATUS.md) before treating a package as approved.
 
+## Install with the skills CLI
+
+Install the workflows for a product from this public repository with the [Vercel skills CLI](https://skills.sh/docs/cli). Each command installs only the named skills into your current project; add `--global --agent codex` for a user-level Codex installation, or select another supported agent.
+
+```sh
+# MentionedOn: AI visibility, supplied evidence, website fixes and answer captures
+npx skills add johnarndt/soxoa-mcp-portfolio --skill mentionedon-visibility-review mentionedon-discovery-evidence mentionedon-website-fixes mentionedon-answer-capture
+
+# Intakra: account opportunities, supplied buying signals and workspace setup
+npx skills add johnarndt/soxoa-mcp-portfolio --skill intakra-account-opportunities intakra-buying-signal-review intakra-workspace-setup
+
+# Portravo: prepare a takeoff, review an estimate and clarify unresolved scope
+npx skills add johnarndt/soxoa-mcp-portfolio --skill portravo-prepare-takeoff portravo-review-estimate portravo-scope-questions
+
+# Postedly: letters, fax, postcards, cards, paper checks, saved work and order status
+npx skills add johnarndt/soxoa-mcp-portfolio --skill postedly-mail-letter postedly-fax-document postedly-send-postcard postedly-handwritten-card postedly-mail-check postedly-saved-correspondence postedly-track-orders
+
+# RegSentry: public tracking and consent evidence review
+npx skills add johnarndt/soxoa-mcp-portfolio --skill regsentry-consent-evidence-review
+```
+
+To inspect the catalog without installing, run `npx skills add johnarndt/soxoa-mcp-portfolio --list`. These standalone skills include their instructions and references; they do not automatically connect an MCP server. Follow the product connection guide linked above for the separate connection and any required authorization.
+
+The [skills.sh documentation](https://skills.sh/docs/faq) explains that directory discovery and installation counts come from CLI install telemetry. A successful installation does not establish a search ranking, an audit approval or completed account authorization.
+
 ## Hermes
 
 Hermes can install the standalone skills from this public GitHub tap. This is separate from the OpenClaw plugin bundles.
