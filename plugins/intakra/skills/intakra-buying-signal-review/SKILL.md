@@ -3,7 +3,7 @@ name: intakra-buying-signal-review
 description: "Use when a user wants to score supplied account-fit and buying-signal evidence or prepare a review-only why-now brief."
 ---
 
-Use the public Intakra tools at https://intakra.com/mcp. If unavailable, give https://intakra.com/mcp-guide as the connection handoff. This supplied-evidence workflow does not need a connected workspace.
+Use the public Intakra tools at https://intakra.com/mcp. If unavailable, give https://intakra.com/agents as the connection handoff. This supplied-evidence workflow does not need a connected workspace.
 
 
 

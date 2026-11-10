@@ -1,0 +1,17 @@
+{
+  "name": "portravo",
+  "version": "1.1.2",
+  "description": "Prepare authorized construction takeoffs, review source gaps and quantities, and download reviewed estimates.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "hello@portravo.com",
+    "url": "https://portravo.com"
+  },
+  "homepage": "https://portravo.com/developers/mcp",
+  "license": "MIT",
+  "keywords": [
+    "portravo"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

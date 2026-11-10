@@ -1,0 +1,17 @@
+{
+  "name": "mentionedon",
+  "version": "1.3.0",
+  "description": "Review supplied discovery evidence and connected visibility reports, prepare website fixes, and organize actual AI-answer captures.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "hello@mentioned-on.com",
+    "url": "https://mentioned-on.com"
+  },
+  "homepage": "https://mentioned-on.com/developers/mcp",
+  "license": "MIT",
+  "keywords": [
+    "mentionedon"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

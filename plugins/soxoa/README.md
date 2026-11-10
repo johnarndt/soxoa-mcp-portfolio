@@ -33,3 +33,7 @@ Connection does not authorize unrelated writes, paid work, purchases, or communi
 Documentation: https://soxoa.com/mcp-guide
 
 These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.
+
+## Current MCP tools
+
+`build_workflow_pilot`, `estimate_automation_roi`, `prioritize_automation_workflows`. Tool availability and current schemas are determined by the live server and the connected account.

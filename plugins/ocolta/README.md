@@ -32,3 +32,7 @@ Connection does not authorize unrelated writes, paid work, purchases, or communi
 Documentation: https://app.ocolta.com/workspace/integrations
 
 These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.
+
+## Current MCP tools
+
+`get_connected_purchase`, `get_review_summary`, `list_recent_reviews`. Tool availability and current schemas are determined by the live server and the connected account.

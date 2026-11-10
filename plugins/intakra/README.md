@@ -30,6 +30,10 @@ Use dated supplied or owned-workspace evidence; do not infer verified buying int
 
 Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 
-Documentation: https://intakra.com/mcp-guide
+Documentation: https://intakra.com/agents
 
 These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.
+
+## Current MCP tools
+
+`add_accounts`, `get_account`, `get_account_changes`, `get_best_contact`, `get_daily_brief`, `get_offering`, `get_project_updates`, `list_accounts`, `list_opportunities`, `list_suggestions`, `prepare_why_now_review`, `prioritize_accounts`, `request_accounts`, `score_buying_signal_evidence`, `set_offering`. Tool availability and current schemas are determined by the live server and the connected account.

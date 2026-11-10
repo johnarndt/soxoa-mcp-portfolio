@@ -3,7 +3,7 @@ name: postedly-saved-correspondence
 description: "Save or reuse private Postedly contacts and correspondence drafts, find prior orders, or export recorded delivery evidence."
 ---
 
-Use the connected service at https://postedly.com/mcp/send. If unavailable, provide https://postedly.com/developers for normal OAuth setup. Saving and deleting use the exact record and current version; restarting a draft does not approve payment.
+Use the connected service at https://postedly.com/mcp/send. If unavailable, provide https://postedly.com/agents/connect for normal OAuth setup. Saving and deleting use the exact record and current version; restarting a draft does not approve payment.
 
 
 
@@ -19,4 +19,4 @@ Contacts are retained one year after their last save; drafts 30 days. A PDF can 
 
 Use `postedly_orders` filters and pagination to locate the owned order before `postedly_order_status`. `postedly_delivery_report` returns plain-text file content and available provider evidence; save privately when requested. Distinguish payment, acceptance, transmission and delivery. Do not call a provider milestone legal proof or independent receipt confirmation.
 
-Delete only the exact contact or draft the user requests using confirmedDelete=true and its current expectedVersion. Deletion does not cancel delivery or change an existing order. On uncertain paid actions, check existing orders before continuing; never create duplicate orders to recover a timeout.
+Use `postedly_delete_contact` or `postedly_delete_draft` only for the exact contact or draft the user requests, using confirmedDelete=true and its current expectedVersion. Deletion does not cancel delivery or change an existing order. On uncertain paid actions, check existing orders before continuing; never create duplicate orders to recover a timeout.

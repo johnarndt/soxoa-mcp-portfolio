@@ -33,3 +33,7 @@ Connection does not authorize unrelated writes, paid work, purchases, or communi
 Documentation: https://portravo.com/developers/mcp
 
 These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.
+
+## Current MCP tools
+
+`attach_plan_pdf`, `create_project`, `export_reviewed_estimate`, `get_profile`, `get_takeoff`, `get_takeoff_status`, `list_pricing_markets`, `list_projects`, `preflight_takeoff`, `run_takeoff`. Tool availability and current schemas are determined by the live server and the connected account.

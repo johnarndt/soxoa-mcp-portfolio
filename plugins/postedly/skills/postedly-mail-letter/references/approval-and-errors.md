@@ -8,7 +8,7 @@ Shared reference for every Postedly sending skill. Load it when a tool call fail
 - Auth: OAuth 2.0 with dynamic client registration. Scopes: `orders:read` (read the connected account's orders), `quotes:write` (upload documents, prepare upload handoffs, create quotes), `checkout:write` (get review links).
 - The client runs the sign-in. The user verifies their email and approves scopes on Postedly's own consent page in a browser. Never ask for a password, token, authorization code or email verification code in chat.
 - Not connected? The tools `postedly_services`, `postedly_quote` and so on will be missing. Tell the user:
-  - Add or enable the Postedly remote MCP connection in the host client, then complete Postedly email verification and final consent in the browser. Follow the host’s documented setup. Connection help: https://postedly.com/developers .
+  - Add or enable the Postedly remote MCP connection in the host client, then complete Postedly email verification and final consent in the browser. Follow the host’s documented setup. Connection help: https://postedly.com/agents/connect .
   - Manual website fallback: [Postedly](https://postedly.com/send).
 - Without the connection you can still draft and check content, gather addresses and explain requirements. Never say a quote, price, proof or order exists when no tool ran.
 

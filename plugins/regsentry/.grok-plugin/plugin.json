@@ -1,0 +1,17 @@
+{
+  "name": "regsentry",
+  "version": "1.2.2",
+  "description": "Inspect authorized tracking and consent evidence, compare observations, and prepare remediation and evidence exports.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "hello@soxoa.com",
+    "url": "https://regsentry.com"
+  },
+  "homepage": "https://regsentry.com/mcp-guide",
+  "license": "MIT",
+  "keywords": [
+    "regsentry"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

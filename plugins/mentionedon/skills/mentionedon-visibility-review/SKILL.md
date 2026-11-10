@@ -14,3 +14,5 @@ Use `get_visibility_report` for the latest saved capture, competitors, source li
 Present the main finding, supporting dated evidence and a useful unresolved next action. On a return visit, reread the report and `get_website_fixes` to recognize saved work and installation checks before recommending repeated work. Website drafts and installation verification are separate requested workflows. These reads do not publish a website, run paid scans or notify anyone.
 
 For supplied observations without an owned account, the public evidence tools provide a separate workflow. Access can be revoked at https://mentioned-on.com/oauth/connections.
+
+For questions about competitors and cited sources, use `get_share_of_voice`. Use `get_improvement_results` for returned before/after evidence and preserve its comparability and non-causation limits. Use `list_articles` to read recent existing drafts and `get_ai_referrals` for reported referred visits; missing referrers mean those counts are a floor. These reads do not create or publish articles or run scans.

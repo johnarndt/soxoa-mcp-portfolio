@@ -34,3 +34,7 @@ Connection does not authorize unrelated writes, paid work, purchases, or communi
 Documentation: https://mentioned-on.com/developers/mcp
 
 These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.
+
+## Current MCP tools
+
+`analyze_discovery_readiness`, `build_visibility_action_plan`, `draft_website_fixes`, `get_ai_referrals`, `get_improvement_results`, `get_share_of_voice`, `get_visibility_report`, `get_website_fixes`, `inspect_business_website`, `list_articles`, `list_monitored_businesses`, `summarize_scan_evidence`, `verify_website_fixes`. Tool availability and current schemas are determined by the live server and the connected account.

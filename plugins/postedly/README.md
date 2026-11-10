@@ -34,6 +34,10 @@ Check postedly_services or the live catalog before quoting fax, letters, certifi
 
 Connection does not authorize unrelated writes, paid work, purchases, or communication. Follow the user's actual request and the current server schema. Recover uncertain jobs and orders before starting another.
 
-Documentation: https://postedly.com/developers
+Documentation: https://postedly.com/agents/connect
 
 These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.
+
+## Current MCP tools
+
+`postedly_bank_accounts`, `postedly_check_draft`, `postedly_checkout`, `postedly_contacts`, `postedly_delete_contact`, `postedly_delete_draft`, `postedly_delivery_report`, `postedly_document_status`, `postedly_drafts`, `postedly_order_status`, `postedly_orders`, `postedly_prepare_document`, `postedly_products`, `postedly_quote`, `postedly_save_contact`, `postedly_save_draft`, `postedly_services`, `postedly_upload_document`. Tool availability and current schemas are determined by the live server and the connected account.

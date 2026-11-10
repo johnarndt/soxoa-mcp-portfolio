@@ -3,7 +3,7 @@ name: postedly-track-orders
 description: "Check existing Postedly orders and explain recorded payment, fulfillment, and delivery evidence. Use for order status, a missing confirmation, or an uncertain send; do not create a replacement order or infer a receipt from a quote."
 ---
 
-Use https://postedly.com/mcp/send through the existing owner’s normal OAuth connection. Documentation: https://postedly.com/developers. If no connected service is available, preserve the known order and provide the setup handoff; do not invent a status.
+Use https://postedly.com/mcp/send through the existing owner’s normal OAuth connection. Documentation: https://postedly.com/agents/connect. If no connected service is available, preserve the known order and provide the setup handoff; do not invent a status.
 
 
 

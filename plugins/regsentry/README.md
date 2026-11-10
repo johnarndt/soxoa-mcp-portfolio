@@ -31,3 +31,7 @@ Connection does not authorize unrelated writes, paid work, purchases, or communi
 Documentation: https://regsentry.com/mcp-guide
 
 These MIT-licensed files contain public configuration and skill instructions. Hosted services retain their terms and implementation rights.
+
+## Current MCP tools
+
+`compare_consent_observations`, `export_consent_report`, `get_remediation_playbook`, `inspect_runtime_consent`, `inspect_site_tracking`, `interpret_consent_evidence`. Tool availability and current schemas are determined by the live server and the connected account.

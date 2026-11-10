@@ -1,0 +1,17 @@
+{
+  "name": "postedly",
+  "version": "1.6.0",
+  "description": "Prepare correspondence and owner-funded paper checks with private browser approval; track orders and reuse saved correspondence.",
+  "author": {
+    "name": "Soxoa LLC",
+    "email": "john@soxoa.com",
+    "url": "https://postedly.com"
+  },
+  "homepage": "https://postedly.com/agents/connect",
+  "license": "MIT",
+  "keywords": [
+    "postedly"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

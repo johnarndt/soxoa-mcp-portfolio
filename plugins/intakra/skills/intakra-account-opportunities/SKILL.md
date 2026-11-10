@@ -5,7 +5,7 @@ description: "Prioritize owned Intakra accounts, review dated buying signals and
 
 # Review accounts worth attention
 
-Use the connected workspace at https://intakra.com/mcp through normal OAuth with `accounts:read`. The old /api/mcp resource requires a fresh connection; never repurpose its token. Setup guidance is https://intakra.com/mcp-guide. Resolve missing scopes through normal consent, not pasted secrets.
+Use the connected workspace at https://intakra.com/mcp through normal OAuth with `accounts:read`. The old /api/mcp resource requires a fresh connection; never repurpose its token. Setup guidance is https://intakra.com/agents. Resolve missing scopes through normal consent, not pasted secrets.
 
 Start with `list_accounts` or `get_daily_brief` according to the question. Use `prioritize_accounts` to rank owned candidates from saved opportunities. Preserve missing domains, quiet results, pagination, check dates and source links. An empty or quiet brief is valid and does not establish no activity. Present the most useful finding first, then why it matters and its evidence.
 
